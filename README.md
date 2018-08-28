@@ -23,3 +23,7 @@ Jason: Back End/API, Making it go boom.
 ## _The UI:_
 
 <a href="https://github.com/JRForman/Project_3/blob/master/readme_resources/FetchUIX.pdf">Click to view UI</a>
+
+## _The Board:_
+
+<a href="https://github.com/JRForman/Project_3/projects/1">Click to go to the project management board</a>
