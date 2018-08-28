@@ -22,8 +22,4 @@ Jason: Back End/API, Making it go boom.
 
 ## _The UI:_
 
-<object data="https://github.com/JRForman/Project_3/blob/master/readme_resources/FetchUIX.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/JRForman/Project_3/blob/master/readme_resources/FetchUIX.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/JRForman/Project_3/blob/master/readme_resources/FetchUIX.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+<a href="https://github.com/JRForman/Project_3/blob/master/readme_resources/FetchUIX.pdf">Click to view UI</a>
