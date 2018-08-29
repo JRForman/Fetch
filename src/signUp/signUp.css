@@ -1,0 +1,39 @@
+/* sign up page */
+#signUpPage {
+    display: grid;
+    grid-template-columns: 39% 28% 39%;
+    grid-template-rows: 20vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+    color: #c1403d;
+}
+#signUpLogo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+.signUpForm {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: span 3;
+}
+#signUpButtons {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: span 5;
+    display: flex;
+    flex-direction: row;
+}
+#signUpButton {
+    height: 5vh;
+    background-color: #0294A5;
+    border-color: #c1403d;
+    border-radius: 15%;
+    color: #c1403d;
+}
+#logInLink {
+    height: 5vh;
+    margin-left: 1vh;
+    margin-top: 0;
+}
