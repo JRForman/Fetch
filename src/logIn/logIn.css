@@ -1,0 +1,36 @@
+/* login page */
+#logInPage {
+    display: grid;
+    grid-template-columns: 39% 28% 39%;
+    grid-template-rows: 20vh 10vh 10vh;
+    color: #03353e;
+}
+#logInLogo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: span 4;
+    margin-left: 10vw;
+}
+.logInForm {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: span 3;
+}
+#logInbuttons {
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 3;
+    grid-row-end: span 4;
+    display: flex;
+    flex-direction: row;
+}
+#logInButton {
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+}
+#signUpLink {
+    padding-top: 1vh;
+}
