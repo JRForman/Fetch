@@ -1,0 +1,69 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.profilePage {
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 5% 5% 80% 5% 5%;
+    grid-template-rows: 20vh 30vh 5vh 5vh 5vh 5vh 5vh 5vh 30vh 10vh;
+}
+.profileNavBar {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+.userPhoto {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+.line1{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: span 3;
+}
+.line2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: span 4;
+}
+.line3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: span 5;
+}
+.line4{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: span 6;
+}
+.line5{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: span 7;
+}
+.line6{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: span 8;
+}
+.map{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 10;
+    grid-row-end: span 10;  
+}
+.profileFooter{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 11;
+    grid-row-end: span 11;   
+}
