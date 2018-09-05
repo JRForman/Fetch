@@ -1,21 +1,28 @@
 import React, { Component } from "react";
 import "./navBar.css";
+import Btn from "../btn";
 import { Link } from "react-router-dom";
 
-class CollNavBar extends Component {
+class NavBar extends Component {
   render() {
     return (
-  <div className="colNavBar">
-<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-  <span class="sr-only">Toggle navigation</span>
-  <span class="icon-bar top-bar"> <div className="navTitle">Fetch</div></span>
-  <span class="icon-bar middle-bar"><Link to='/#profile'>Home</Link></span>
-  <span class="icon-bar middle-bar"><Link to='/#main'>Search</Link></span>
-  <span class="icon-bar bottom-bar"><Link to={'/#logIn'}>Log Out</Link></span>
-</button>
+  <div className="nav">
+    <p className="navTitle">Fetch</p>
+    
+    <Link to='/#profile'><Btn onClick={this.handleFormSubmit}
+      type="submit">Home</Btn>
+    </Link>
+
+    <Link to='/#logIn'><Btn onClick={this.handleFormSubmit}
+      type="submit">Log Out</Btn>
+    </Link>
+
+    <Link to='/#update'><Btn onClick={this.handleFormSubmit}
+      type="submit">Update Profile</Btn>
+    </Link>
   </div>
 )
   }
 }
 
-export default CollNavBar;
+export default NavBar;

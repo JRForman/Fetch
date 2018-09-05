@@ -1,28 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 import "./navBar.css";
-import Btn from "../btn";
+import Btn from "./components/btn";
 import { Link } from "react-router-dom";
 
-class NavBar extends Component {
-  render() {
-    return (
+const NavBar = props => (
   <div className="nav">
     <p className="navTitle">Fetch</p>
-    
-    <Link to='/#profile'><Btn onClick={this.handleFormSubmit}
-      type="submit">Home</Btn>
-    </Link>
+    <Btn
+      onClick={props.handleBtnClick}
+      data-value="pass"
+    />
 
-    <Link to='/#logIn'><Btn onClick={this.handleFormSubmit}
-      type="submit">Log Out</Btn>
-    </Link>
-
-    <Link to='/#update'><Btn onClick={this.handleFormSubmit}
-      type="submit">Update Profile</Btn>
-    </Link>
+    <div className="logOut">{props.Btn}</div>
+    <div className="accountUpdate">{props.Btn}</div>
   </div>
-)
-  }
-}
+);
 
 export default NavBar;
