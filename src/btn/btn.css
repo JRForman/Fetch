@@ -1,0 +1,27 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* general buttons */
+.btn{
+    height: 5vh;
+    background-color: #0294A5;
+    border-color: #c1403d;
+    border-radius: 6px;
+    color: #c1403d;
+}
+
+/* login button(tennis ball) */
+.logInBtn{
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+}
+/* home button */
+.homeBtn{
+    height: 5vh;
+    background-color: #0294A5;
+    border-color: #c1403d;
+    border-radius: 6px;
+    color: #c1403d;
+}
