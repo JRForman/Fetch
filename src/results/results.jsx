@@ -1,9 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 import "./results.css";
-import Btn from "./components/btn";
+import Card from "../card";
 
-const Results = props => (
-<div className="results"></div>
-);
+class Results extends Component {
+    render() {
+      return (
+<div className="results">
+    <Card/>
+</div>
+)
+    }
+}
 
 export default Results;

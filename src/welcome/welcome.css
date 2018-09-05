@@ -1,0 +1,44 @@
+.welcomePage {
+    background-image: url("/public/assets/images/welcome.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #03353e;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 39% 28% 39%;
+    grid-template-rows: 20% 30% 10% 40%;
+}
+.welcomeLogo{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.welcomeMessage{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.welcomeButtonDiv{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end:  3;
+    
+}
+button{
+    height: 7vh;
+    width: 5vw;
+    background-color: #0294A5;
+    border-color: #c1403d;
+    border-radius: 6px;
+    color: #c1403d;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+}

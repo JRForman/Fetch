@@ -1,24 +1,23 @@
-import React from "react";
+import React, { Component } from "react";
 import "./btn.css";
 import { Link } from "react-router-dom";
 
 
 class HomeBtn extends React.Component {
   render() {
-      const { 
-        variant,
-        content,
-        ...others
-      } = this.props;
-      
-      return (
-        <Link to='/#profile'>
-        <button className={variant} {...others}>
-          {content} ={{ img: `url("/public/client/public/assets/images/home24.png")` }}
-        </button>
-        </Link> 
-      )
+  
+    function handleClick(e) {
+      e.preventDefault();
+      console.log('The link was clicked.');
     }
-  };
+  
+    return (
+      <Link to="/#main" ><button onClick={handleClick}>
+        <img src="/public/assets/images/home24.png" alt="home"></img>
+        </button>
+        </Link>
+    );
+  }
+};
 
 export default HomeBtn;

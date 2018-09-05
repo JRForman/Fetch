@@ -1,8 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 import "./footer.css";
+import { Link } from "react-router-dom";
 
-const Footer = props => (
-<div className="footer"></div>
-);
+class Footer extends Component {
+    render() {
+        return (
+<div className="footer">
+<img src={"/public/assets/images/ADJ Designs.png"} alt="ADJ Designs" className="companyLogo"/>
+</div>
+        )
+        }
+}
 
 export default Footer;

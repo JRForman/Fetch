@@ -1,22 +1,21 @@
-import React from "react";
+import React, { Component } from "react";
 import "./btn.css";
 import { Link } from "react-router-dom";
 
 class LogInBtn extends React.Component {
   render() {
-      const { 
-        variant,
-        content,
-        ...others
-      } = this.props;
-      
+  
+      function handleClick(e) {
+        e.preventDefault();
+        console.log('The link was clicked.');
+      }
+    
       return (
-        <Link to='/#logIn'>
-        <button className={variant} {...others}>
-          {content} ={{ img: `url("/public/assets/images/fetch.png")` }}
-        </button>
-        </Link>
-      )
+        <Link to="/#profile" ><button onClick={handleClick}>
+          <img src="/public/assets/images/fetch.png" alt="tennis ball"></img>
+          </button>
+          </Link>
+      );
     }
   };
 

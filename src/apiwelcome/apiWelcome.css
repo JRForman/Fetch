@@ -1,0 +1,14 @@
+.apiPage {
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 39% 28% 39%;
+    grid-template-rows: 20vh 10vh 10vh;
+ 
+}
+.apiLogo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: span 4;
+    margin-left: 10vw;
+}

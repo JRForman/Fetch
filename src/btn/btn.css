@@ -7,7 +7,7 @@ body{
     height: 5vh;
     background-color: #0294A5;
     border-color: #c1403d;
-    border-radius: 15%;
+    border-radius: 6px;
     color: #c1403d;
 }
 
@@ -22,6 +22,6 @@ body{
     height: 5vh;
     background-color: #0294A5;
     border-color: #c1403d;
-    border-radius: 15%;
+    border-radius: 6px;
     color: #c1403d;
 }

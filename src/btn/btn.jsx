@@ -1,22 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 import "./btn.css";
 import { Link } from "react-router-dom";
 
-class Btn extends React.Component {
 
-  render() {
-    const { 
-      variant,
-      content,
-      ...others
-    } = this.props;
-    
-    return (
-      <button className={variant} {...others}>
-        {content}
-      </button>
-    )
-  }
-};
+const Btn = (props) => ( 
+			<div>
+<button onClick={props.onClick}>{props.label} {props.className}</button>
+			</div>
 
+);
 export default Btn;
