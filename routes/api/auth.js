@@ -29,6 +29,7 @@ router.post('/signup', function(req, res) {
 });
 
 router.post('/login', function(req, res) {
+  console.log(req.body)
   db.User.findOne({
     username: req.body.username
   }, function(err, user) {
@@ -39,6 +40,7 @@ router.post('/login', function(req, res) {
     } else {
       // check if password matches
       user.comparePassword(req.body.password, function (err, isMatch) {
+        console.log(isMatch)
         if (isMatch && !err) {
           // if user is found and password is right create a token
           var token = jwt.sign(user.toJSON(), settings.secret);
