@@ -1,32 +1,35 @@
-import React, { Component } from "react";
+import React from "react";
 import "./map.css";
 // import "./mapApp.js";
 import Btn from "../btn";
-import { Link } from "react-router-dom";
+import Activities from "../../images/activitiesbtn.png";
+import Bars from "../../images/barsbtn.png";
+import Coffee from "../../images/coffeebtn.png";
+import  Events from "../../images/eventsbtn.png";
+import  Food from "../../images/foodbtn.png";
+import  Hotels from "../../images/hotelsbtn.png";
+import  Parks from "../../images/parksbtn.png";
+import  PetPlaces from "../../images/petplacesbtn.png";
+import  Rentals from "../../images/rentalsbtn.png";
+import  Shopping from "../../images/shoppingbtn.png";
 
-const Map = props => (
-    <div className="map">
+const Map = (props) => ( 
+    <div className="mapDiv">
         <div className="mapBtns">
-            <Btn onClick={this.handleFilter.parks}
-                type="submit">{{ img: `url("/public/assets/images/parksbtn.png")` }}</Btn>
-            <Btn onClick={this.handleFilter.food}
-                type="submit">{{ img: `url("/public/assets/images/foodbtn.png")` }}</Btn>
-            <Btn onClick={this.handleFilter.coffee}
-                type="submit">{{ img: `url("/public/assets/images/coffeebtn.png")` }}</Btn>
-            <Btn onClick={this.handleFilter.bars}
-                type="submit">{{ img: `url("/public/assets/images/barsbtn.png")` }}</Btn>
-            <Btn onClick={this.handleFilter.events}
-                type="submit">{{ img: `url("/public/assets/images/eventsbtn.png")` }}</Btn>
-            <Btn onClick={this.handleFilter.hotels}
-                type="submit">{{ img: `url("/public/assets/images/hotelsbtn.png")` }}</Btn>
-            <Btn onClick={this.handleFilter.rentals}
-                type="submit">{{ img: `url("/public/assets/images/rentalsbtn.png")` }}</Btn>
-            <Btn onClick={this.handleFilter.petplaces}
-                type="submit">{{ img: `url("/public/assets/images/petplacesbtn.png")` }}</Btn>
-            <Btn onClick={this.handleFilter.shopping}
-                type="submit">{{ img: `url("/public/assets/images/shoppingbtn.png")` }}</Btn>
-            <Btn onClick={this.handleFilter.activities}
-                type="submit">{{ img: `url("/public/assets/images/activitiesbtn.png")` }}</Btn>
+        <Btn className="activitiesMapBtn" label={<img src={Activities} alt="activities button" id="activitiesButton"/>} />
+        <Btn className="barsMapBtn" label={<img src={Bars} alt="bars button" id="barsButton"/>} />
+        <Btn className="coffeeMapBtn" label={<img src={Coffee} alt="coffee button" id="coffeeButton"/>} />
+        <Btn className="eventsMapBtn" label={<img src={Events} alt="events button" id="eventsButton"/>} />
+        <Btn className="foodMapBtn" label={<img src={Food} alt="food button" id="foodButton"/>} />
+        <Btn className="hotelsMapBtn" label={<img src={Hotels} alt="hotels button" id="hotelsButton"/>} />
+        <Btn className="parksMapBtn" label={<img src={Parks} alt="parks button" id="parksButton"/>} />
+        <Btn className="petPlacesMapBtn" label={<img src={PetPlaces} alt="pet places button" id="petPlacesButton"/>} />
+        <Btn className="rentalsMapBtn" label={<img src={Rentals} alt="rentals button" id="rentalsButton"/>} />
+        <Btn className="shoppingMapBtn" label={<img src={Shopping} alt="shopping button" id="shoppingButton"/>} />
+
         </div>
     </div>
 );
+
+
+export default Map;

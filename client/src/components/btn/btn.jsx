@@ -1,12 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import "./btn.css";
-import { Link } from "react-router-dom";
 
-
-const Btn = (props) => ( 
-			<div>
-<button onClick={props.onClick}>{props.label} {props.className}</button>
-			</div>
-
+const Btn = (props) => (
+	<button className={props.className}>{props.label}</button>
 );
 export default Btn;

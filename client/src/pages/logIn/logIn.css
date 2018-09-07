@@ -1,16 +1,19 @@
 .logInPage {
-    font-family: 'Poppins', sans-serif;
+    background-image: url("./../../images/logInBackground.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
     display: grid;
     grid-template-columns: 39% 28% 39%;
-    grid-template-rows: 20vh 10vh 10vh;
-    color: #03353e;
+    grid-template-rows: 22vh 10vh 10vh;
+    justify-items: center;
 }
 .logInLogo {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: span 4;
-    margin-left: 10vw;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 .logInForm {
     grid-column-start: 2;
@@ -20,9 +23,9 @@
 }
 .logInButtons {
     grid-column-start: 2;
-    grid-column-end: span 3;
+    grid-column-end: 3;
     grid-row-start: 3;
-    grid-row-end: span 4;
+    grid-row-end: 4;
     display: flex;
     flex-direction: row;
 }
@@ -31,6 +34,9 @@
     border: none;
     border-radius: 100%;
 }
-.signUpLink {
-    padding-top: 1vh;
+
+#logoPhoto{
+    height: 15vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
 }

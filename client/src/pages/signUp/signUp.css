@@ -1,37 +1,57 @@
 .signUpPage {
+    background-image: url("./../../images/logInBackground.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
     display: grid;
     grid-template-columns: 39% 28% 39%;
-    grid-template-rows: 20vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
-    color: #c1403d;
-    font-family: 'Poppins', sans-serif;
+    grid-template-rows: 22vh 5vh 5vh 5vh 10vh 10vh 10vh 10vh 10vh;
 }
 .signUpLogo {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: span 2;
+    grid-row-end: 1;
+    margin-top: 5vh;
 }
 .signUpForm {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
-    grid-row-end: span 3;
+    grid-row-end: span 4;
 }
+
 .signUpButtons {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 5;
-    grid-row-end: span 5;
+    grid-row-end: 5;
     display: flex;
     flex-direction: row;
-    height: 5vh;
-    background-color: #0294A5;
-    border-color: #c1403d;
-    border-radius: 15%;
+  
 }
 
-.logInLink {
-    height: 5vh;
-    margin-left: 1vh;
-    margin-top: 0;
+.signUpBtn{
+    width: 5vw;
+    font-size: small;
+    height: 4vh;
+}
+
+.signUpCancelBtn{
+    font-size: small;
+    width: 5vw;
+    height: 4vh;
+    margin-left: .5vw;
+}
+
+.logInLink{
+    height: 2vh;
+    margin-left: .5vw;
+    position: relative;
+  top: 50%;
+  transform: translateY(-300%);
+}
+#signUpPhoto{
+    height: 15vh;
 }

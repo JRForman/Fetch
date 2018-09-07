@@ -3,7 +3,6 @@ import "./profile.css";
 import NavBar from "../../components/navBar";
 import Footer from "../../components/footer";
 import Map from "../../components/map";
-import { Link } from "react-router-dom";
 
 class Profile extends Component {
         render() {
@@ -13,7 +12,7 @@ class Profile extends Component {
               <NavBar />
               </div>
               <div className="personalInfo">
-                      <img>{{ img: `url(this.image)`}}</img>
+                      <img src={this.image} alt="user photo" id="ProfilePhoto"/>
                       <h5 className="line1">Name:{this.name}</h5> 
                       <h5 className="line2">Email:{this.email}</h5>
                       <h5 className="line3">Password:{this.password}</h5>

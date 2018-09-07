@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import "./header.css";
 import CollNavBar from "../navBar";
-import { Link } from "react-router-dom";
+import BannerLogo from "../../images/bannerlogo.png";
+import BannerGif from "../../images/fetch.gif";
 
 class Header extends Component {
     render() {
       return (
-<div className="header">
-<img src="/public/assets/images/banner logo.png" alt="logo" className="headerLogo" ></img>
-<img src="/public/assets/images/fetch.gif" alt="logo" className="headerLogo" ></img>
-<div className="navBar"><CollNavBar /></div>
+<div className="headerPage">
+<div className="bannerLogo"><img src={BannerLogo} alt="fetch" id="headerDogPhoto"/></div>
+<div className="bannerGif"><img src={BannerGif} alt="tennis ball" id="headerGif"/></div>
+<div className="headerNavBar"><CollNavBar /></div>
 
 </div>
 )
