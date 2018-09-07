@@ -5,17 +5,13 @@ import Btn from "../../components/btn";
 import FetchLogo from "../../images/fetchlogo.png";
 
 class Welcome extends Component {
-    state = { label: "Start"}
     render() {
         return (
             <div className="welcomePage">
-                <div className="welcomeLogo"><img src={FetchLogo} alt="fetch" /></div>
+                <div className="welcomeLogo"><img src={FetchLogo} alt="fetch" id="dogPhoto"/></div>
                 <h1 className="welcomeMessage">Get Up. Get Out. Together.</h1>
                 <div className="welcomeButtonDiv">
-                <Link to='/#main'><Btn onClick={this.handleFormSubmit}
-                   label = {this.state.label}
-                   >
-                   </Btn></Link>
+                <Link to='/#main'><Btn className="welcomeBtn" label="Enter" /></Link>
                 </div>
             </div>
         )

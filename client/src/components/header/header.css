@@ -1,4 +1,24 @@
-body{
-    font-family: 'Fugaz One', cursive;
-    font-family: 'Baloo Thambi', cursive;
+.headerPage{
+    display: grid;
+    grid-template-columns: 5% 85% 10%;
+    grid-template-rows: 30vh 20vh 5vh;
+    justify-items: center;
+}
+.bannerLogo{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.bannerGif{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.headerNavBar{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;  
 }

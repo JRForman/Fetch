@@ -1,29 +1,24 @@
 import React, { Component } from "react";
 import "./signUp.css";
 import Btn from "../../components/btn";
-import PageLinks from "../../components/btn";
 import FormInput from "../../components/formInput";
 import { Link } from "react-router-dom";
+import Fetch from "../../images/fetchlogo.png";
 
 class SignUp extends Component {
     render() {
       return (
     <div className="signUpPage">
-        <div className="SignUpLogo"><img src="/public/assets/images/fetch logo.png" alt="logo"></img></div>
+        <div className="signUpLogo"><img src={Fetch} alt="fetch" id="signUpPhoto"/></div>
         <div className="signUpForm">
-            <FormInput className="nameField">{this.FormInput.name}</FormInput>
-            <FormInput className="emailField">{this.FormInput.email}</FormInput>
-            <FormInput className="passwordField">{this.FormInput.password}</FormInput>
-            <FormInput className="petNameField">{this.FormInput.petName}</FormInput>
-            <FormInput className="zipCodeField">{this.FormInput.zipCode}</FormInput>
+                <FormInput className="signUpNameField" label="Name:" type="text" name="name"/> 
+                <FormInput className="signUpEmailField" label="Email:" type="text" name="email"/> 
+                <FormInput className="signUpPasswordField" label="Password:" type="text" name="password"/> 
         </div>
         <div className="signUpButtons">
-            <Link to='/#profile'><Btn onClick={this.handleFormSubmit}
-                type="submit">Submit</Btn>
-            </Link>
-            <PageLinks onClick={this.logInLink} />
-            <Link to='/#logIn'><Btn onClick={this.handleFormCancel}
-                type="submit">Cancel</Btn></Link>
+            <Link to='/#profile'><Btn className="signUpBtn" label="Sign Up" /></Link>
+            <Link to='/#logIn'><Btn className="signUpCancelBtn" label="Cancel" /></Link>
+            <p className="logInLink">Or log in <Link to={'/#signUp'}>here</Link></p> 
         </div>
     </div>
       )

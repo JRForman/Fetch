@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import "./404.css";
-import HomeBtn from "../../components/btn";
 import { Link } from "react-router-dom";
+import "./404.css";
+import Btn from "../../components/btn";
+import Home from "../../images/home24.png";
 
 class Error extends Component {
   render() {
@@ -11,7 +12,7 @@ class Error extends Component {
       <h1 className="errorLine2">Excuse us.</h1>
       <h1 className="errorLine3">We will get back to work now.</h1>
       <div className="errorHome">
-             <HomeBtn />
+      <Link to='/#main'><Btn className="errorCancelBtn" label={<img src={Home} alt="home button" id="homeButton"/>} /></Link>
     </div>
     </div>
     )

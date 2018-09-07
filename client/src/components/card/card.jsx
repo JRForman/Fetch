@@ -1,36 +1,35 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import "./card.css";
-import ResultsAddBtn from "../btn";
 import Btn from "../btn";
-import UpVoteBtn  from "../btn";
-import DownVoteBtn  from "../btn";
+import Paw from "../../images/paw.png";
+import Star from "../../images/Star24.png";
 
 
 class Card extends Component {
-  state = { label: "omment"};
   render() {
     return (
-    <div className="card mt-4">
-      <div className="card-header">
-        <h3>
-          <strong>
-            <i className={`fa fa-${"props.icon"}`} aria-hidden="true" />{" "}
-            {"props.title"}
-          </strong>
-        </h3>
-        <ResultsAddBtn />
-        <Btn onClick={this.handleFormSubmit}
-                   label = {this.state.label}
-                   >
-                   </Btn>
+      <div className="card mt-4">
+        <div className="card-header">
+          <h3>
+            <strong>
+              <i className={`fa fa-${"props.icon"}`} aria-hidden="true" />{" "}
+              {"props.title"}
+            </strong>
+          </h3>
+          <Btn className="cardFavoriteBtn" label={<img src={Star} alt="favorites button" id="favoritesButton" />} />
+          <Btn className="cardCommentBtn" label="Comment" alt="comment button" id="commentButton" />} />
       </div>
-      <div className="card-body">{"props.children"} 
-      <UpVoteBtn />
-      <DownVoteBtn />
+        <div className="card-body">{"props.children"}  
+          <span>
+            <Btn className="cardRatingBtn" label={<img src={Paw} alt="rating 1" id="rating1" />} />
+            <Btn className="cardRatingBtn" label={<img src={Paw} alt="rating 2" id="rating2" />} />
+            <Btn className="cardRatingBtn" label={<img src={Paw} alt="rating 3" id="rating3" />} />
+            <Btn className="cardRatingBtn" label={<img src={Paw} alt="rating 4" id="rating4" />} />
+            <Btn className="cardRatingBtn" label={<img src={Paw} alt="rating 5" id="rating5" />} />
+          </span>
+        </div>
       </div>
-    </div>
-    )  
-}
-}
-  export default Card;
+    );
+  };
+};
+export default Card;
