@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./card.css";
 import Btn from "../btn";
 import Paw from "../../images/paw.png";
-import Star from "../../images/Star24.png";
+import Star from "../../images/star24.png";
 
 
 class Card extends Component {

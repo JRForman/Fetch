@@ -1,88 +1,60 @@
 import React, { Component } from "react";
+import axios from 'axios';
 import "./signUp.css";
 import Btn from "../../components/btn";
-import PageLinks from "../../components/btn";
 import FormInput from "../../components/formInput";
 import { Link } from "react-router-dom";
-import axios from 'axios';
+import Fetch from "../../images/fetchlogo.png";
 
 class SignUp extends Component {
 
-    constructor() {
-        super();
-        this.state = {
-                username: '',
-                password: '',
-                email: '',
-                password: '',
-                petName: [],
-                zipCode: ''
-            };
-        }
-        onChange = (e) => {
-        const state = this.state
-        state[e.target.name] = e.target.value;
-        this.setState(state);
-        }
+   constructor() {
+      super();
+      this.state = {
+         username: '',
+         password: '',
+         email: ''
+      };
+   }
+   onChange = (e) => {
+      const state = this.state
+      state[e.target.name] = e.target.value;
+      console.log(state);
+      this.setState(state);
+   }
 
-        onSubmit = (e) => {
-        e.preventDefault();
+   onSubmit = (e) => {
+      e.preventDefault();
 
-        const { username, email, password, petName, zipCode} = this.state;
+      const { username, email, password } = this.state;
 
-        axios.post('/routes/api/signup', { username, email, password, petName, zipCode})
-                .then((result) => {
-                this.props.history.push("../login")
-                 // pushes a new entry onto the history stack
-                });
-        }
+      axios.post('/routes/api/signup', { username, email, password })
+         .then((result) => {
+            console.log("RESULT" + JSON.stringify(result))
+            this.props.history.push("../login")
+            // pushes a new entry onto the history stack
+         });
 
-        render() {
-        const { username, email, password, petName, zipCode} = this.state;
-        return (
-                <div class="container">
-                <form class="form-signin" onSubmit={this.onSubmit}>
-                <h2 className="form-signin-heading">Register</h2>
-                <label  className="sr-only">username</label>
-                <input type="email" className="form-control" placeholder="username" name="username" value={username} onChange={this.onChange} required/>
-                <label  className="sr-only">Email address</label>
-                <input type="email" className="form-control" placeholder="Email address" name="email" value={email} onChange={this.onChange} required/>
-                <label  className="sr-only">Password</label>
-                <input type="password" className="form-control" placeholder="Password" name="password" value={password} onChange={this.onChange} required/>
-                <label className="sr-only">Pet Name</label>
-                <input type="petName" className="form-control" placeholder="PetName" name="petName" value={petName} onChange={this.onChange} required/>
-                <label  className="sr-only">Zipcode</label>
-                <input type="zipCode" className="form-control" placeholder="zipCode" name="zipCode" value={zipCode} onChange={this.onChange} required/>
-                <button className="btn btn-lg btn-primary btn-block" type="submit">Register</button>
-                </form>
-                </div>
-        );
+      console.log("I did something");
+   }
+
+   render() {
+      const { username, email, password } = this.state;
+      return (
+         <form className="signUpPage" onSubmit={this.onSubmit}>
+            <div className="signUpLogo"><img src={Fetch} alt="fetch" id="signUpPhoto" /></div>
+            <div className="signUpForm">
+               <FormInput className="signUpNameField" label="Name:" type="text" name="username" change={this.onChange} value={username} />
+               <FormInput className="signUpEmailField" label="Email:" type="email" name="email" value={email} change={this.onChange} required />
+               <FormInput className="signUpPasswordField" label="Password:" type="text" name="password" value={password} change={this.onChange} required />
+            </div>
+            <div className="signUpButtons">
+               <Btn className="signUpBtn" label="Sign Up" type="submit" />
+               <Link to='/#logIn'><Btn className="signUpCancelBtn" label="Cancel" /></Link>
+               <p className="logInLink" type="submit">Or log in <Link to={'../logIn/logIn.jsx'}>here</Link></p>
+            </div>
+         </form>
+      )
+   }
 }
-
-
-
-    // render() {
-    //   return (
-    // <div className="signUpPage">
-    //     <div className="SignUpLogo"><img src="/public/assets/images/fetch logo.png" alt="logo"></img></div>
-    //     <div className="signUpForm">
-    //         <FormInput className="nameField">{this.FormInput.name}</FormInput>
-    //         <FormInput className="emailField">{this.FormInput.email}</FormInput>
-    //         <FormInput className="passwordField">{this.FormInput.password}</FormInput>
-    //         <FormInput className="petNameField">{this.FormInput.petName}</FormInput>
-    //         <FormInput className="zipCodeField">{this.FormInput.zipCode}</FormInput>
-    //     </div>
-    //     <div className="signUpButtons">
-    //         <Link to='/#profile'><Btn onClick={this.handleFormSubmit}
-    //             type="submit">Submit</Btn>
-    //         </Link>
-    //         <PageLinks onClick={this.logInLink} />
-    //         <Link to='/#logIn'><Btn onClick={this.handleFormCancel}
-    //             type="submit">Cancel</Btn></Link>
-    //     </div>
-    // </div>
-    //   )
-    // }
-}
-        
 export default SignUp;

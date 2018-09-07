@@ -8,21 +8,19 @@ var router = express.Router();
 var db = require("../../models");
 
 router.post('/signup', function(req, res) {
+  console.log(req.body)
   if (!req.body.username || !req.body.password) {
     res.json({success: false, msg: 'Please pass username and password.'});
   } else {
     var newUser = new db.User({
       username: req.body.username,
       password: req.body.password,
-      email: req.body.email,
-      petName: req.body.petName,
-      zipCode: req.body.zipCode,
-
-
+      email: req.body.email
     });
     // save the user
     newUser.save(function(err) {
       if (err) {
+        console.log(err);
         return res.json({success: false, msg: 'Username already exists.'});
       }
       res.json({success: true, msg: 'Successful created new user.'});
