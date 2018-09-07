@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./profile.css";
+import axios from 'axios';
 import NavBar from "../../components/navBar";
 import Footer from "../../components/footer";
 import Map from "../../components/map";

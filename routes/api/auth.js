@@ -1,23 +1,26 @@
 var mongoose = require('mongoose');
 var passport = require('passport');
-var settings = require('../config/settings');
-require('../config/passport')(passport);
+var settings = require('../../config/settings');
+require('../../config/passport')(passport);
 var express = require('express');
 var jwt = require('jsonwebtoken');
 var router = express.Router();
-var User = require("../models/user");
+var db = require("../../models");
 
-router.post('/register', function(req, res) {
+router.post('/signup', function(req, res) {
+  console.log(req.body)
   if (!req.body.username || !req.body.password) {
     res.json({success: false, msg: 'Please pass username and password.'});
   } else {
-    var newUser = new User({
+    var newUser = new db.User({
       username: req.body.username,
-      password: req.body.password
+      password: req.body.password,
+      email: req.body.email
     });
     // save the user
     newUser.save(function(err) {
       if (err) {
+        console.log(err);
         return res.json({success: false, msg: 'Username already exists.'});
       }
       res.json({success: true, msg: 'Successful created new user.'});
@@ -26,7 +29,8 @@ router.post('/register', function(req, res) {
 });
 
 router.post('/login', function(req, res) {
-  User.findOne({
+  console.log(req.body)
+  db.User.findOne({
     username: req.body.username
   }, function(err, user) {
     if (err) throw err;
@@ -36,6 +40,7 @@ router.post('/login', function(req, res) {
     } else {
       // check if password matches
       user.comparePassword(req.body.password, function (err, isMatch) {
+        console.log(isMatch)
         if (isMatch && !err) {
           // if user is found and password is right create a token
           var token = jwt.sign(user.toJSON(), settings.secret);

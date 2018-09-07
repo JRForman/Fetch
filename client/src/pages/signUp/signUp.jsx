@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from 'axios';
 import "./signUp.css";
 import Btn from "../../components/btn";
 import FormInput from "../../components/formInput";
@@ -6,23 +7,54 @@ import { Link } from "react-router-dom";
 import Fetch from "../../images/fetchlogo.png";
 
 class SignUp extends Component {
-    render() {
+
+   constructor() {
+      super();
+      this.state = {
+         username: '',
+         password: '',
+         email: ''
+      };
+   }
+   onChange = (e) => {
+      const state = this.state
+      state[e.target.name] = e.target.value;
+      console.log(state);
+      this.setState(state);
+   }
+
+   onSubmit = (e) => {
+      e.preventDefault();
+
+      const { username, email, password } = this.state;
+
+      axios.post('/routes/api/signup', { username, email, password })
+         .then((result) => {
+            console.log("RESULT" + JSON.stringify(result))
+            this.props.history.push("../login")
+            // pushes a new entry onto the history stack
+         });
+
+      console.log("I did something");
+   }
+
+   render() {
+      const { username, email, password } = this.state;
       return (
-    <div className="signUpPage">
-        <div className="signUpLogo"><img src={Fetch} alt="fetch" id="signUpPhoto"/></div>
-        <div className="signUpForm">
-                <FormInput className="signUpNameField" label="Name:" type="text" name="name"/> 
-                <FormInput className="signUpEmailField" label="Email:" type="text" name="email"/> 
-                <FormInput className="signUpPasswordField" label="Password:" type="text" name="password"/> 
-        </div>
-        <div className="signUpButtons">
-            <Link to='/#profile'><Btn className="signUpBtn" label="Sign Up" /></Link>
-            <Link to='/#logIn'><Btn className="signUpCancelBtn" label="Cancel" /></Link>
-            <p className="logInLink">Or log in <Link to={'/#signUp'}>here</Link></p> 
-        </div>
-    </div>
+         <form className="signUpPage" onSubmit={this.onSubmit}>
+            <div className="signUpLogo"><img src={Fetch} alt="fetch" id="signUpPhoto" /></div>
+            <div className="signUpForm">
+               <FormInput className="signUpNameField" label="Name:" type="text" name="username" change={this.onChange} value={username} />
+               <FormInput className="signUpEmailField" label="Email:" type="email" name="email" value={email} change={this.onChange} required />
+               <FormInput className="signUpPasswordField" label="Password:" type="text" name="password" value={password} change={this.onChange} required />
+            </div>
+            <div className="signUpButtons">
+               <Btn className="signUpBtn" label="Sign Up" type="submit" />
+               <Link to='/#logIn'><Btn className="signUpCancelBtn" label="Cancel" /></Link>
+               <p className="logInLink" type="submit">Or log in <Link to={'../logIn/logIn.jsx'}>here</Link></p>
+            </div>
+         </form>
       )
-    }
+   }
 }
-        
 export default SignUp;

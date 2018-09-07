@@ -7,4 +7,6 @@ var PlaceSchema = new mongoose.Schema({
   
 });
 
-module.exports = mongoose.model('Place', PlaceSchema);
+ const Place = mongoose.model('Place', PlaceSchema);
+
+ module.exports = Place
