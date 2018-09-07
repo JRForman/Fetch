@@ -44,7 +44,7 @@ class SignUp extends Component {
                 <form class="form-signin" onSubmit={this.onSubmit}>
                 <h2 className="form-signin-heading">Register</h2>
                 <label  className="sr-only">username</label>
-                <input type="username" className="form-control" placeholder="username" name="username" value={username} onChange={this.onChange} required/>
+                <input type="email" className="form-control" placeholder="username" name="username" value={username} onChange={this.onChange} required/>
                 <label  className="sr-only">Email address</label>
                 <input type="email" className="form-control" placeholder="Email address" name="email" value={email} onChange={this.onChange} required/>
                 <label  className="sr-only">Password</label>

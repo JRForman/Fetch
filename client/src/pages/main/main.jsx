@@ -5,17 +5,16 @@ import Footer from "../../components/footer";
 import Map from "../../components/map";
 import Results from "../../components/results";
 import CollNavBar from "../../components/navBar";
-import { Link } from "react-router-dom";
+
 
 class Main extends Component {
     render() {
       return (
-<div className="main">
-        <Header />
-        <CollNavBar />
-        <Map />
-        <Results />
-        <Footer />
+<div className="mainPage">
+        <div className="mainHeaderDiv"><Header /></div>
+        <div className="mainMapDiv"><Map /></div>
+        <div className="mainResultsDiv"><Results /></div>
+        <div className="mainFooterDiv"><Footer /></div>       
 </div>
 )
       }

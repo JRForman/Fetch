@@ -3,31 +3,31 @@ import "./update.css";
 import Btn from "../../components/btn";
 import FormInput from "../../components/formInput";
 import { Link } from "react-router-dom";
+import NavBar from "../../components/navBar";
+import Footer from "../../components/footer";
 
 class Update extends Component {
-    state = {
-        label: "Update",
-        label: "Cancel"}
     render() {
         return (
-            <div className="updateForm">
-                <FormInput className="photoField">{this.FormInput.photo}</FormInput>
-                <FormInput className="nameField">{this.FormInput.name}</FormInput>
-                <FormInput className="emailField">{this.FormInput.email}</FormInput>
-                <FormInput className="passwordField">{this.FormInput.password}</FormInput>
-                <FormInput className="petNameField">{this.FormInput.petName}</FormInput>
-                <FormInput className="zipCodeField">{this.FormInput.zipCode}</FormInput>
-                <div className="updateBtns">
-                    <Link to='/#profile'><Btn onClick={this.handleFormSubmit}
-                        label={this.state.label.Update}>
-                    </Btn></Link>
-                    <Link to='/#profile'><Btn onClick={this.handleFormSubmit}
-                        label={this.state.label.Cancel}>
-                        </Btn></Link>
+            <div className="updatePage">
+            <div className="updateNavBar"><NavBar /></div>
+            <div className="photoDiv">
+                <FormInput className="photoField" label="Photo:" type="file" name="photo"/> 
+                <Btn className="uploadBtn" label="Upload" />
                 </div>
+                <FormInput className="nameField" label="Name:" type="text" name="name"/> 
+                <FormInput className="emailField" label="Email:" type="text" name="email"/> 
+                <FormInput className="passwordField" label="Password:" type="text" name="password"/> 
+                <FormInput className="petNameField" label="Pet Name(s):" type="text" name="petName"/> 
+                <FormInput className="zipCodeField" label="Zip Code:" type="text" name="zipCode"/> 
+                <div className="updateButtons">
+                <Btn className="submitBtn" label="Submit" />
+                <Btn className="cancelBtn" label="Cancel" />
+                </div>
+                <div className="updateFooter"> <Footer/></div>  
             </div>
-                    )
-                        }
-                    }
-                    
+        )
+    }
+}
+
 export default Update;

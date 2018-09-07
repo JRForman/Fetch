@@ -1,3 +1,56 @@
-body{
-    font-family: 'Poppins', sans-serif;
+.nav {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 10% 10% 60% 10% 10%;
+    grid-template-rows: 10vh;
+    justify-items: center;
+}
+
+.navTitle{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.navSearchBtn{
+    height: 4vh;
+    font-size: small;
+  
+}
+.navLogOutBtn{
+    height: 4vh;
+    font-size: small;
+}
+.navUpdateBtn{
+ 
+    background-color: white;
+    border-color: white;
+    height: 4vh;
+}
+.navButton1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding-top: 2vh;
+    vertical-align: bottom;
+}
+.navButton2{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding-top: 2vh;
+    vertical-align: bottom;
+}
+.navButton3{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding-top: 2vh;
+    vertical-align: bottom;
+}
+#updateButton{
+    height: 3vh;
 }

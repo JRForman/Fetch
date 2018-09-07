@@ -1,3 +1,54 @@
-body{
-    font-family: 'Poppins', sans-serif;
+.footer{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 5% 45% 30%;
+    grid-template-rows: 10vh;
+    justify-items: center;  
+}
+
+.footerLogo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.footerCenter{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    
+}
+
+.footerLink{
+    margin-left: 37vw;
+    font-size: x-small;
+}
+
+.footerCopyright{
+    font-size: x-small; 
+    margin-left: 39vw;
+}
+
+#companyLogo{
+    height: 5vh;
+}
+
+.footerSearchBtn{
+    height: 3vh;
+    width: 4vw;
+    font-size: small;
+    margin-left: 1vw;
+}
+
+.footerSearch{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.searchField{
+    float: left;
 }
