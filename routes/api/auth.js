@@ -1,19 +1,24 @@
 var mongoose = require('mongoose');
 var passport = require('passport');
-var settings = require('../config/settings');
-require('../config/passport')(passport);
+var settings = require('../../config/settings');
+require('../../config/passport')(passport);
 var express = require('express');
 var jwt = require('jsonwebtoken');
 var router = express.Router();
-var User = require("../models/user");
+var db = require("../../models");
 
-router.post('/register', function(req, res) {
+router.post('/signup', function(req, res) {
   if (!req.body.username || !req.body.password) {
     res.json({success: false, msg: 'Please pass username and password.'});
   } else {
-    var newUser = new User({
+    var newUser = new db.User({
       username: req.body.username,
-      password: req.body.password
+      password: req.body.password,
+      email: req.body.email,
+      petName: req.body.petName,
+      zipCode: req.body.zipCode,
+
+
     });
     // save the user
     newUser.save(function(err) {
@@ -26,7 +31,7 @@ router.post('/register', function(req, res) {
 });
 
 router.post('/login', function(req, res) {
-  User.findOne({
+  db.User.findOne({
     username: req.body.username
   }, function(err, user) {
     if (err) throw err;

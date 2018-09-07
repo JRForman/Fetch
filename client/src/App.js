@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+
 
 // fetch pages
 import Error from "./pages/404";
@@ -22,9 +22,11 @@ import Welcome from "./pages/welcome";
 // import ApiDocumentation from "./pages/apiDocumentation";
 // import ApiForm from "./pages/apiForm";
 
-class App extends Component{
-render() {
-  return (
+// class App extends Component{
+// render() {
+//   return (
+
+const App = () => (
   <Router>
     <div>
       <Switch>
@@ -40,38 +42,8 @@ render() {
          <Route exact path="/apidashboard" component={ApiDashboard} /> 
          <Route exact path="/apicontact" component={ApiContact} />   */}
         <Route component={Error} />
-      </Switch> 
+      </Switch>
     </div>
 </Router>
-
-
-
-  // constructor(props) {
-  //   super(props);
-  //     this.state = {
-  //     places: []
-  //   };
-  // }
-
-  // componentDidMount() {
-  //   axios.defaults.headers.common['Authorization'] = localStorage.getItem('jwtToken');
-  //   axios.get('/api/place')
-  //     .then(res => {
-  //       this.setState({ places: res.data });
-  //       console.log(this.state.places);
-  //     })
-  //     .catch((error) => {
-  //       if(error.response.status === 401) {
-  //         this.props.history.push("/login");
-  //       }
-  //     });
-  // }
-
-  // logout = () => {
-  //   localStorage.removeItem('jwtToken');
-  //   window.location.reload();
-  // }
-  )
-}
-};
+  );
 export default App;

@@ -4,8 +4,8 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 
-var place = require('./routes/place');
-var auth = require('./routes/auth');
+// var place = require('./routes/api/place');
+var auth = require('./routes');
 var app = express();
 
 var mongoose = require('mongoose');
@@ -19,8 +19,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':'false'}));
 app.use(express.static(path.join(__dirname, 'client/public')));
 
-app.use('/api/place', place);
-app.use('/api/auth', auth);
+// app.use('/api/place', place);
+app.use('/routes/api', auth);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -36,7 +36,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '3001');
 app.set('port', port);
 
 /**
@@ -55,6 +55,7 @@ server.on('listening', onListening);
 
 /**
  * Normalize a port into a number, string, or false.
+ *  URLs are modified and standardized in a consistent manner. The goal of the normalization process is to transform a URL into a normalized URL so it is possible to determine if two syntactically different URLs may be equivalent.
  */
 
 function normalizePort(val) {
@@ -120,7 +121,8 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  next(err);
+  //changed this from... res.render('error');
 });
 
-module.exports = app;
+ module.exports = app;

@@ -1,9 +1,12 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-var Place = require('../models/Place.js');
+var Place = require('../../models/Place.js');
 var passport = require('passport');
-require('../config/passport')(passport);
+require('../../config/passport.js')(passport);
+
+
+
 
 /* GET ALL PLACES */
 router.get('/', passport.authenticate('jwt', { session: false}), function(req, res) {

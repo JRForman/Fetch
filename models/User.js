@@ -8,10 +8,29 @@ var UserSchema = new Schema({
         unique: true,
         required: true
     },
+    email: {
+        type: String,
+        unique: true,
+        required: true
+    },
   password: {
         type: String,
         required: true
+    },
+    petName: { 
+        type : Array, 
+        default : [] 
+    },
+    zipCode: {
+        type: String,
+        unique: true,
+        required: true
+    },
+    favoriteLocation: {
+    type : Array, 
+    default : [] 
     }
+          
 });
 
 UserSchema.pre('save', function (next) {
@@ -43,4 +62,5 @@ UserSchema.methods.comparePassword = function (passw, cb) {
     });
 };
 
-module.exports = mongoose.model('User', UserSchema);
+const User = mongoose.model('User', UserSchema);
+module.exports = User;
