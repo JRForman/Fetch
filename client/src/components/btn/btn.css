@@ -1,12 +1,23 @@
-
-/* general buttons */
-/* .btn{
-    height: 5vh;
+/* welcome button */
+.welcomeBtn{
+    height: 7vh;
+    width: 5vw;
     background-color: #0294A5;
     border-color: #c1403d;
     border-radius: 6px;
     color: #c1403d;
-} */
+    font-size: large;
+    opacity: 1;
+}
+.footerSearchBtn{
+    height: 7vh;
+    width: 5vw;
+    background-color: #0294A5;
+    border-color: #c1403d;
+    border-radius: 6px;
+    color: #c1403d;
+    font-size: large;
+}
 
 /* login button(tennis ball) */
 .logInBtn{
@@ -14,11 +25,125 @@
     border: none;
     border-radius: 100%;
 }
-/* home button */
-.homeBtn{
-    height: 5vh;
+
+/* card buttons */
+.cardCommentBtn{
     background-color: #0294A5;
     border-color: #c1403d;
     border-radius: 6px;
     color: #c1403d;
 }
+.cardViewCommentBtn{
+    background-color: #0294A5;
+    border-color: #c1403d;
+    border-radius: 6px;
+    color: #c1403d;
+}
+.cardFavoriteBtn{
+    background-color: white;
+    border-color: white;
+}
+.cardRatingBtn1{
+    background-color: white;
+    border-color: white;
+}
+.cardRatingBtn2{
+    background-color: white;
+    border-color: white;
+}
+.cardRatingBtn3{
+    background-color: white;
+    border-color: white;
+}
+.cardRatingBtn4{
+    background-color: white;
+    border-color: white;
+}
+.cardRatingBtn5{
+    background-color: white;
+    border-color: white;
+}
+
+/* map buttons */
+.activitiesMapBtn{
+    background-color: white;
+    border-color: white;
+    border-radius: 100%
+}
+#activitiesButton{
+    height: 7vh;
+}
+.barsMapBtn{
+    background-color: white;
+    border-color: white;
+    border-radius: 100%
+}
+#barsButton{
+    height: 7vh;
+}
+.coffeeMapBtn{
+    background-color: white;
+    border-color: white;
+    border-radius: 100%
+}
+#coffeeButton{
+    height: 7vh;
+}
+.eventsMapBtn{
+    background-color: white;
+    border-color: white;
+    border-radius: 100%
+}
+#eventsButton{
+    height: 7vh;
+}
+.foodMapBtn{
+    background-color: white;
+    border-color: white;
+    border-radius: 100%
+}
+#foodButton{
+    height: 7vh;
+}
+.hotelsMapBtn{
+    background-color: white;
+    border-color: white;
+    border-radius: 100%
+}
+#hotelsButton{
+    height: 7vh;
+}
+.parksMapBtn{
+    background-color: white;
+    border-color: white;
+    border-radius: 100%
+}
+#parksButton{
+    height: 7vh;
+}
+
+.petPlacesMapBtn{
+    background-color: white;
+    border-color: white;
+    border-radius: 100%
+}
+#petPlacesButton{
+    height: 7vh;
+}
+.rentalsMapBtn{
+    background-color: white;
+    border-color: white;
+    border-radius: 100%
+}
+#rentalsButton{
+    height: 7vh;
+}
+.shoppingMapBtn{
+    background-color: white;
+    border-color: white;
+    border-radius: 100%
+}
+#shoppingButton{
+    height: 7vh;
+}
+

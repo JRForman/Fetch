@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 100% ;
     grid-template-rows: 30% 35% 35% 10%;
-    flex-direction: row;
 }
 .mapBtns{
     grid-column-start: 1;
@@ -10,63 +9,14 @@
     grid-row-start: 4;
     grid-row-end: 4;
 }
-#activitiesButton{
-    height: 7vh;
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
-}
-#barsButton{
-    height: 7vh;
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
-}
-#coffeeButton{
-    height: 7vh;
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
-}
-#eventsButton{
-    height: 7vh;
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
-}
-#foodButton{
-    height: 7vh;
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
-}
-#hotelsButton{
-    height: 7vh;
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
-}
-#parksButton{
-    height: 7vh;
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
-}
-#petPlacesButton{
-    height: 7vh;
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
-}
-#rentalsButton{
-    height: 7vh;
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
-}
-#shoppingButton{
-    height: 7vh;
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
-}
+
+
+
+
+
+
+
+
+
+
+

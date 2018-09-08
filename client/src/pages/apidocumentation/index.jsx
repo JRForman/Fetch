@@ -1,1 +1,1 @@
-export { default } from "./apidocumentation";
+export { default } from "./apiDocumentation";

@@ -49,9 +49,9 @@ class SignUp extends Component {
                <FormInput className="signUpPasswordField" label="Password:" type="text" name="password" value={password} change={this.onChange} required />
             </div>
             <div className="signUpButtons">
-               <Btn className="signUpBtn" label="Sign Up" type="submit" />
-               <Link to='/#logIn'><Btn className="signUpCancelBtn" label="Cancel" /></Link>
-               <p className="logInLink" type="submit">Or log in <Link to={'../logIn/logIn.jsx'}>here</Link></p>
+            <Link to='/profile'><Btn className="signUpBtn" label="Sign Up" type="submit" /></Link>
+               <Link to='/main'><Btn className="signUpCancelBtn" label="Cancel" /></Link>
+               <p className="logInLink" type="submit">Or log in <Link to='/logIn'>here</Link></p>
             </div>
          </form>
       )
