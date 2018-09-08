@@ -7,30 +7,37 @@
     opacity: .79;
     display: grid;
     grid-template-columns: 10% 26.66% 26.66% 26.66% 10%;
-    grid-template-rows: 30% 35% 35% 10%;
+    grid-template-rows: 30% 30% 30% 10%;
     justify-items: center;
 }
+
 .mainHeaderDiv{
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 1;
+    width: 100%;
 }
+
 .mainMapDiv{
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 2;
 }
+
 .mainResultsDiv{
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 3;
 }
+
 .mainFooterDiv{
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 4;
+    width: 100%;
+    height: 100%;
 }

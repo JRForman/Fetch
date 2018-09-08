@@ -1,1 +1,1 @@
-export { default } from "./apicontact";
+export { default } from "./apiContact";

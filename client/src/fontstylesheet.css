@@ -1,0 +1,16 @@
+@font-face{ 
+	font-family: 'norwester';
+	src: url('https://www.fontsquirrel.com/license/norwester');
+	src: url('https://www.fontsquirrel.com/license/norwester') format('embedded-opentype'),
+	     url('https://www.fontsquirrel.com/license/norwester.woff') format('woff'),
+	     url('https://www.fontsquirrel.com/license/norwester.ttf') format('truetype'),
+         url('https://www.fontsquirrel.com/license/norwester.svg#webfont') format('svg');
+         
+    font-family: 'norwester';
+         src: url('https://www.fontsquirrel.com/license/norwester');
+         src: url('https://www.fontsquirrel.com/license/norwester') format('embedded-opentype'),
+              url('https://www.fontsquirrel.com/license/norwester.woff') format('woff'),
+              url('https://www.fontsquirrel.com/license/norwester.ttf') format('truetype'),
+              url('https://www.fontsquirrel.com/license/norwester.svg#webfont') format('svg');
+     
+        }

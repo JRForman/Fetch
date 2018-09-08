@@ -9,9 +9,11 @@ class Welcome extends Component {
         return (
             <div className="welcomePage">
                 <div className="welcomeLogo"><img src={FetchLogo} alt="fetch" id="dogPhoto"/></div>
-                <h1 className="welcomeMessage">Get Up. Get Out. Together.</h1>
+                <div className="welcomeMessage">
+                <h1>Get Up. Get Out. Together.</h1>
+                </div>
                 <div className="welcomeButtonDiv">
-                <Link to='/#main'><Btn className="welcomeBtn" label="Enter" /></Link>
+                <Link to='/main'><Btn className="welcomeBtn" label="Enter" /></Link>
                 </div>
             </div>
         )

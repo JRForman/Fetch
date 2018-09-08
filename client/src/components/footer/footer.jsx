@@ -13,7 +13,7 @@ class Footer extends Component {
                                 <img src={ADJ} alt="ADJ Designs" id="companyLogo"/>
                                 </div>
                                 <div classname="footerCenter">
-                                <Link to='/#apiwelcome' className="footerLink">Fetch Developer Portal</Link>
+                                <Link to='/apiWelcome' className="footerLink">Fetch Developer Portal</Link>
                         <p className="footerCopyright">&copy; 2018</p>
                         </div>
                         <div className="footerSearch">

@@ -1,0 +1,41 @@
+.apiHeader {
+ 
+    background-color:#656464;
+    display: grid;
+    grid-template-columns: 10% 35% 10% 35% 10%;
+    grid-template-rows: 10vh;
+    justify-items: center;
+}
+.apiCompanyLogo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    height: 7vh;
+    width: 7vw;
+}
+
+.apiBrandLogo{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    height: 7vh;
+    width: 7vw;
+}
+
+.apiFormButton{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1; 
+}
+
+#Key{
+    height: 2vh;
+    width: 2vw;
+}
+.keyRequest{
+color: #fbf7f7;
+font-family: 'Open Sans', sans-serif;
+}

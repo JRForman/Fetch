@@ -1,0 +1,92 @@
+.apiFormPage{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 10% 10% 70% 10%;
+    justify-items: center;
+    background-image: url("./../../images/apibackground.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    color: #82170f;
+    font-family: 'norwester';
+}
+
+.apiFormHeader {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 100%;
+}
+
+.FormTitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.apiFormNavBar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: span 4; 
+    height: 100%;
+    width: 100%;
+}
+
+.apiNameField {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.apiEmailField {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.apiPasswordField {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.apiCompanyField {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.apiUsageField {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.apiFormButton {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.apiFormFooter {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.apiSubmitBtn{
+        height: 4vh;
+        background-color: #82170f;
+        color: #fbf7f7;
+        border-color: #656464;
+        font-family: 'Open Sans', sans-serif;
+}
