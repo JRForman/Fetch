@@ -1,13 +1,26 @@
-.mapDiv{
+.mapPage{
     display: grid;
+    background-color: aqua;
     grid-template-columns: 100% ;
     grid-template-rows: 30% 35% 35% 10%;
+    border-color: blueviolet;
+    /* opacity: .5; */
+    border-style: solid;
+    height: 100%;
+    display: flex;
+    flex-direction: row;  
 }
 .mapBtns{
-    grid-column-start: 1;
+    grid-column-start: 5;
     grid-column-end: 1;
     grid-row-start: 4;
-    grid-row-end: 4;
+    grid-row-end: 4; 
+    opacity: 1;
+    /* display: flex;
+    flex-direction: column;   */
+    position: relative;
+    top: 33vh;
+    left: 10vw;
 }
 
 
