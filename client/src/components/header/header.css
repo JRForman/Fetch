@@ -3,6 +3,9 @@
     grid-template-columns: 5% 85% 10%;
     grid-template-rows: 50% 45% 5%;
     justify-items: center;
+    background-color: white;
+    height: 65%;
+    
 }
 
 .bannerLogo{
@@ -18,8 +21,8 @@
     grid-row-start: 2;
     grid-row-end: 2;
     position: relative;
-    right: 4vw;
-    bottom: 12vh;
+    right: 3vw;
+    top: 8vh;
 }
 
 .headerNavBar{
@@ -27,15 +30,13 @@
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 3;  
-    position: relative;
-    bottom: 28vh;
 }
 
 #headerDogPhoto{
-    height: 35vh;
+    height: 25vh;
 }
 
 #headerGif{
-    height: 15vh;
+    height: 10vh;
     
 }

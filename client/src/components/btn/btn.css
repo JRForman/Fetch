@@ -2,20 +2,60 @@
 .welcomeBtn{
     height: 7vh;
     width: 5vw;
+    border-radius: 6px;
     background-color: #0294A5;
     border-color: #c1403d;
-    border-radius: 6px;
     color: #c1403d;
     font-size: large;
     opacity: 1;
 }
+.welcomeBtn:hover{
+    height: 7vh;
+    width: 5vw;
+    border-radius: 6px;
+    background-color: #19abbc;
+    border-color: #db5a57;
+    color: #db5a57;
+    font-size: large;
+    opacity: 1;
+}
+.welcomeBtn:active{
+    height: 7vh;
+    width: 5vw;
+    border-radius: 6px;
+    background-color: #008293;
+    border-color: #ad2c29;
+    color: #ad2c29;
+    font-size: large;
+    opacity: 1;
+}
+
+/* footer  button */
 .footerSearchBtn{
     height: 7vh;
     width: 5vw;
+    border-radius: 6px;
     background-color: #0294A5;
     border-color: #c1403d;
-    border-radius: 6px;
     color: #c1403d;
+    font-size: large;
+}
+.footerSearchBtn:hover{
+    height: 7vh;
+    width: 5vw;
+    border-radius: 6px;
+    background-color: #19abbc;
+    border-color: #db5a57;
+    color: #db5a57;
+    font-size: large;
+}
+.footerSearchBtn:active{
+    height: 7vh;
+    width: 5vw;
+    border-radius: 6px;
+    background-color: #008293;
+    border-color: #ad2c29;
+    color: #ad2c29;
     font-size: large;
 }
 
@@ -23,25 +63,66 @@
 .logInBtn{
     background-color: white;
     border: none;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 /* card buttons */
 .cardCommentBtn{
+    border-radius: 6px;
+    width: 4.5vw;
     background-color: #0294A5;
     border-color: #c1403d;
-    border-radius: 6px;
     color: #c1403d;
 }
+.cardCommentBtn:hover{
+    border-radius: 6px;
+    width: 4.5vw;
+    background-color: #19abbc;
+    border-color: #db5a57;
+    color: #db5a57;
+}
+.cardCommentBtn:active{
+    border-radius: 6px;
+    width: 4.5vw;
+    background-color: #008293;
+    border-color: #ad2c29;
+    color: #ad2c29;
+}
 .cardViewCommentBtn{
+    margin-top: .2vh;
+    margin-right: .2vh;
+    border-radius: 6px;
+    width: 4.5vw;
+    height: 3.5vh;
     background-color: #0294A5;
     border-color: #c1403d;
-    border-radius: 6px;
     color: #c1403d;
+}
+.cardViewCommentBtn:hover{
+    margin-top: .2vh;
+    margin-right: .2vh;
+    border-radius: 6px;
+    width: 4.5vw;
+    height: 3.4vh;
+    background-color: #19abbc;
+    border-color: #db5a57;
+    color: #db5a57;
+}
+.cardViewCommentBtn:active{
+    margin-top: .2vh;
+    margin-right: .2vh;
+    border-radius: 6px;
+    width: 4.5vw;
+    height: 3.4vh;
+    background-color: #008293;
+    border-color: #ad2c29;
+    color: #ad2c29;
 }
 .cardFavoriteBtn{
     background-color: white;
     border-color: white;
+    width: 2vw;
+    border-radius: 50%
 }
 .cardRatingBtn1{
     background-color: white;
@@ -66,84 +147,155 @@
 
 /* map buttons */
 .activitiesMapBtn{
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
+    border-radius: 50%;
+    height: 6vh;
+    width: 3vw;
+    align-self: center;
+    margin-left: 2vw;
 }
 #activitiesButton{
     height: 7vh;
+    width: 4vw;
+    position: relative;
+    right: 1vw;
+    bottom: 1vh;
+    opacity: 1;
 }
 .barsMapBtn{
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
+    border-radius: 50%;
+    height: 6vh;
+    width: 3vw;
+    align-self: center;
+    margin-left: 2vw;
 }
 #barsButton{
     height: 7vh;
+    width: 4vw;
+    position: relative;
+    right: 1vw;
+    bottom: 1vh;
+    opacity: 1;
 }
 .coffeeMapBtn{
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
+    border-radius: 50%;
+    height: 6vh;
+    width: 3vw;
+    align-self: center;
+    margin-left: 2vw;
 }
 #coffeeButton{
     height: 7vh;
+    width: 4vw;
+    position: relative;
+    right: 1vw;
+    bottom: 1vh;
+    opacity: 1;
 }
 .eventsMapBtn{
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
+    border-radius: 50%;
+    height: 6vh;
+    width: 3vw;
+    align-self: center;
+    margin-left: 2vw;
 }
 #eventsButton{
     height: 7vh;
+    width: 4vw;
+    position: relative;
+    right: 1vw;
+    bottom: 1vh;
+    opacity: 1;
 }
 .foodMapBtn{
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
+    border-radius: 50%;
+    height: 6vh;
+    width: 3vw;
+    align-self: center;
+    margin-left: 2vw;
 }
 #foodButton{
     height: 7vh;
+    width: 4vw;
+    position: relative;
+    right: 1vw;
+    bottom: 1vh;
+    opacity: 1;
 }
 .hotelsMapBtn{
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
+    border-radius: 50%;
+    height: 6vh;
+    width: 3vw;
+    align-self: center;
+    margin-left: 2vw;
 }
 #hotelsButton{
     height: 7vh;
+    width: 4vw;
+    position: relative;
+    right: 1vw;
+    bottom: 1vh;
+    opacity: 1;
 }
 .parksMapBtn{
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
+    border-radius: 50%;
+    height: 6vh;
+    width: 3vw;
+    align-self: center;
+    margin-left: 2vw;
 }
 #parksButton{
     height: 7vh;
+    width: 4vw;
+    position: relative;
+    right: 1vw;
+    bottom: 1vh;
+    opacity: 1;
 }
 
 .petPlacesMapBtn{
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
+    border-radius: 50%;
+    height: 6vh;
+    width: 3vw;
+    align-self: center;
+    margin-left: 2vw;
 }
 #petPlacesButton{
     height: 7vh;
+    width: 4vw;
+    position: relative;
+    right: 1vw;
+    bottom: 1vh;
+    opacity: 1;
 }
 .rentalsMapBtn{
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
+    border-radius: 50%;
+    height: 6vh;
+    width: 3vw;
+    align-self: center;
+    margin-left: 2vw;
 }
 #rentalsButton{
     height: 7vh;
+    width: 4vw;
+    position: relative;
+    right: 1vw;
+    bottom: 1vh;
+    opacity: 1;
 }
 .shoppingMapBtn{
-    background-color: white;
-    border-color: white;
-    border-radius: 100%
+    border-radius: 50%;
+    height: 6vh;
+    width: 3vw;
+    align-self: center;
+    margin-left: 2vw;
+    opacity: 1;
 }
 #shoppingButton{
     height: 7vh;
+    width: 4vw;
+    position: relative;
+    right: 1vw;
+    bottom: 1vh;
+    opacity: 1;
 }
 

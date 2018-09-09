@@ -13,11 +13,15 @@ class Footer extends Component {
                                 <img src={ADJ} alt="ADJ Designs" id="companyLogo"/>
                                 </div>
                                 <div classname="footerCenter">
-                                <Link to='/apiWelcome' className="footerLink">Fetch Developer Portal</Link>
+                                <div className="footerLink">
+                                <Link to='/apiWelcome' >Fetch Developer Portal</Link>
+                                </div>
                         <p className="footerCopyright">&copy; 2018</p>
                         </div>
                         <div className="footerSearch">
+                        <div className="searchDiv">
                         <FormInput className="searchField" label="Search:" type="text" name="search"/> 
+                        </div>
                         <Btn className="footerSearchBtn" label="Search" />
                         </div>
                         </div>
