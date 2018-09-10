@@ -54,6 +54,7 @@ class Profile extends Component {
         }
 
         render() {
+<<<<<<< HEAD
           const {username, email, password,zipCode, petName, favoriteLocation } = this.state;
           return (
               <div className="profilePage">
@@ -76,8 +77,46 @@ class Profile extends Component {
               </div>
       </div>
           )
+=======
+                return (
+                        <div className="profilePage">
+                                <div className="profileNavBarDiv">
+                                        <NavBar />
+                                </div>
+                                <div className="personalInfo">
+                                        <div className="personalInfoLine1">
+                                                <img src={this.image} alt="user photo" id="ProfilePhoto" />
+                                        </div>
+                                        <div className="personalInfoLine2">
+                                                <h5 className="line1">Name:{this.name}</h5>
+                                        </div> 
+                                       <div className="personalInfoLine3">
+                                                <h5 className="line2">Email:{this.email}</h5>
+                                        </div>
+                                        <div className="personalInfoLine4">
+                                                <h5 className="line3">Password:{this.password}</h5>
+                                        </div>
+                                        <div className="personalInfoLine5">
+                                                <h5 className="line4">Pet Name:{this.petName}</h5>
+                                        </div>
+                                        <div className="personalInfoLine6">
+                                                <h5 className="line5">Zip Code:{this.zipCode}</h5>
+                                        </div>
+                                        <div className="personalInfoLine7">
+                                                <h5 className="line6">Favorite Locations:{this.locations}</h5>
+                                        </div>
+                                </div>
+                                <div className="personalMap">
+                                        <Map />
+                                </div>
+                                <div className="footerDiv">
+                                        <Footer />
+                                </div>
+                        </div>
+                )
+>>>>>>> c6e096bb9e5b739365b593d483fe1cf1333d1a58
         }
-      }
+}
 
 export default Profile;
 

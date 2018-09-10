@@ -2,7 +2,7 @@
     background-color: white;
     display: grid;
     grid-template-columns: 5% 45% 30%;
-    grid-template-rows: 10vh;
+    grid-template-rows: 42px;
     justify-items: center;  
     border-top-style: ridge;
     border-width: thin;
@@ -14,9 +14,6 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
-    position: relative;
-    top: 2.5vh;
-    left: 1vw;
 }
 
 .footerCenter{
@@ -30,26 +27,15 @@
 .footerLink{
     margin-left: 37vw;
     font-size: x-small;
-    position: relative;
-    top: 2vh;
 }
 
 .footerCopyright{
     font-size: x-small; 
     margin-left: 39vw;
-    position: relative;
-    top: 2vh;
 }
 
 #companyLogo{
     height: 5vh;
-}
-
-.footerSearchBtn{
-    height: 3vh;
-    width: 4vw;
-    font-size: small;
-    margin-left: 1vw;
 }
 
 .footerSearch{
@@ -57,8 +43,6 @@
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 1;
-    position: relative;
-    top: 4vh;
 }
 
 .searchDiv{
