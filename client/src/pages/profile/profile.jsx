@@ -18,6 +18,15 @@ class Profile extends Component {
               favoriteLocation: []
            };
         }
+
+        componentWillMount(){
+                // Check if u_id exist before making call to server
+            console.log(localStorage.getItem("u_id"));
+            axios.get(`/routes/api/user/${localStorage.getItem("u_id")}`).then(user => {
+                this.setState(user.data);
+            });
+        }
+
         onChange = (e) => {
            const state = this.state
            state[e.target.name] = e.target.value;
@@ -52,13 +61,12 @@ class Profile extends Component {
               <NavBar />
               </div>
               <div className="personalInfo">
-                      <img src={this.image} alt="user photo" id="ProfilePhoto"/>
-                      <h5 className="line1">Name:{this.name}</h5> 
-                      <h5 className="line2">Email:{this.email}</h5>
-                      <h5 className="line3">Password:{this.password}</h5>
-                      <h5 className="line4">Pet Name:{this.petName}</h5>
-                      <h5 className="line5">Zip Code:{this.zipCode}</h5>
-                      <h5 className="line6">Favorite Locations:{this.locations}</h5>
+                      <h5 className="line1">Name:{username}</h5> 
+                      <h5 className="line2">Email:{email}</h5>
+                      <h5 className="line3">Reset Password</h5>
+                      <h5 className="line4">Pet Name:{petName}</h5>
+                      <h5 className="line5">Zip Code:{zipCode}</h5>
+                      <h5 className="line6">Favorite Locations:{favoriteLocation}</h5>
               </div>
               <div className="personalMap">
                    <Map />

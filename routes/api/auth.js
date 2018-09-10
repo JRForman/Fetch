@@ -7,6 +7,15 @@ var jwt = require('jsonwebtoken');
 var router = express.Router();
 var db = require("../../models");
 
+
+// Should get rid of password before sending down to user. they do not need it
+router.get("/user/:id", (req, res) => {
+  db.User.findById(req.params.id).then(user => {
+    console.log(user);
+    res.send(user);
+  });
+})
+
 router.post('/signup', function(req, res) {
   console.log(req.body)
   if (!req.body.username || !req.body.password) {
@@ -15,7 +24,9 @@ router.post('/signup', function(req, res) {
     var newUser = new db.User({
       username: req.body.username,
       password: req.body.password,
-      email: req.body.email
+      email: req.body.email,
+      zipCode: req.body.zipCode,
+      petName: req.body.petName
     });
     // save the user
     newUser.save(function(err) {
