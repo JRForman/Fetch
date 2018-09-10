@@ -56,7 +56,7 @@ render() {
     <div className="logInPage">
     <div className="logInLogo"><img src={Fetch} alt="fetch" id="logoPhoto"/></div>
     <div className="logInForm">
-            <FormInput className="logInEmailField" label="Email:" type="text" name="username" value={username} change={this.onChange} required/> 
+            <FormInput className="logInEmailField" label="username:" type="text" name="username" value={username} change={this.onChange} required/> 
             <FormInput className="logInPasswordField" label="Password:" type="text" name="password" value={password} change={this.onChange} required/> 
     </div>
     <div className="logInButtons">

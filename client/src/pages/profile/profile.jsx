@@ -4,9 +4,48 @@ import axios from 'axios';
 import NavBar from "../../components/navBar";
 import Footer from "../../components/footer";
 import Map from "../../components/map";
-
+// request credentials...
 class Profile extends Component {
+
+        constructor() {
+           super();
+           this.state = {
+              username: '',
+              password: '',
+              email: '',
+              zipCode: '',
+              petName: [],
+              favoriteLocation: []
+           };
+        }
+        onChange = (e) => {
+           const state = this.state
+           state[e.target.name] = e.target.value;
+           console.log(state);
+           this.setState(state);
+        }
+
+        getUserInfo = () => {
+
+        }
+     
+        onSubmit = (e) => {
+           e.preventDefault();
+     
+           const { username, email, password, zipCode, petName, favoriteLocation } = this.state;
+     
+           axios.post('/routes/api/signup', { username, email, password,zipCode, petName, favoriteLocation })
+              .then((result) => {
+                 console.log("RESULT" + JSON.stringify(result))
+                 this.props.history.push("../login")
+                 // pushes a new entry onto the history stack
+              });
+     
+           console.log("I did something");
+        }
+
         render() {
+          const {username, email, password,zipCode, petName, favoriteLocation } = this.state;
           return (
               <div className="profilePage">
               <div className="navBarDiv">
