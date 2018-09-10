@@ -29,12 +29,12 @@ router.post('/signup', function(req, res) {
       petName: req.body.petName
     });
     // save the user
-    newUser.save(function(err) {
+    newUser.save(function(err,dbUser) {
       if (err) {
         console.log(err);
         return res.json({success: false, msg: 'Username already exists.'});
       }
-      res.json({success: true, msg: 'Successful created new user.'});
+      res.json({success: true, msg: 'Successful created new user.', id: dbUser._id});
     });
   }
 });
@@ -58,7 +58,7 @@ router.post('/login', function(req, res) {
           // return the information including token as JSON
           res.json({success: true, token: 'JWT ' + token});
         } else {
-          res.status(401).send({success: false, msg: 'Authentication failed. Wrong password.'});
+          res.status(401).send({success: false, msg: 'Authentication failed. Wrong password.',result});
         }
       });
     }

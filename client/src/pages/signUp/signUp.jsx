@@ -33,7 +33,8 @@ class SignUp extends Component {
       axios.post('/routes/api/signup', { username, email, password, zipCode, petName })
          .then((result) => {
             console.log("RESULT" + JSON.stringify(result))
-            // localStorage.setItem("u_id", result.data._id)
+            localStorage.setItem("u_id", result.data.id)
+
             this.props.history.push("../login")
             // pushes a new entry onto the history stack
          });
