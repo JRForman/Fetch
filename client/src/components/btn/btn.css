@@ -30,33 +30,129 @@
     opacity: 1;
 }
 
-/* footer  button */
-.footerSearchBtn{
-    height: 7vh;
-    width: 5vw;
+/* navbar buttons */
+.navUpdateBtn{
+    background-color: white;
+    border-color: white;
+    height: 4vh;
+    border-radius: 50%;
+}
+.navLogOutBtn{
+    height: 3vh;
+    width: 4vw;
+    font-size: small;
     border-radius: 6px;
     background-color: #0294A5;
     border-color: #c1403d;
     color: #c1403d;
-    font-size: large;
 }
-.footerSearchBtn:hover{
-    height: 7vh;
-    width: 5vw;
+.navLogOutBtn:hover{
+    height: 3vh;
+    width: 4vw;
+    font-size: small;
     border-radius: 6px;
     background-color: #19abbc;
     border-color: #db5a57;
     color: #db5a57;
-    font-size: large;
 }
-.footerSearchBtn:active{
-    height: 7vh;
-    width: 5vw;
+.navLogOutBtn:active{
+    height: 3vh;
+    width: 4vw;
+    font-size: small;
     border-radius: 6px;
     background-color: #008293;
     border-color: #ad2c29;
     color: #ad2c29;
-    font-size: large;
+}
+.navSearchBtn{
+    height: 3vh;
+    width: 4vw;
+    font-size: small;
+    border-radius: 6px;
+    background-color: #0294A5;
+    border-color: #c1403d;
+    color: #c1403d;
+}
+.navSearchBtn:hover{
+    height: 3vh;
+    width: 4vw;
+    font-size: small;
+    border-radius: 6px;
+    background-color: #19abbc;
+    border-color: #db5a57;
+    color: #db5a57;
+}
+.navSearchBtn:active{
+    height: 3vh;
+    width: 4vw;
+    font-size: small;
+    border-radius: 6px;
+    background-color: #008293;
+    border-color: #ad2c29;
+    color: #ad2c29;
+}
+/* footer  button */
+.footerSearchBtn{
+    height: 3vh;
+    width: 4vw;
+    border-radius: 6px;
+    background-color: #0294A5;
+    border-color: #c1403d;
+    color: #c1403d;
+    font-size: x-small;
+    margin-left: 1vw;
+}
+.footerSearchBtn:hover{
+    height: 3vh;
+    width: 4vw;
+    border-radius: 6px;
+    background-color: #19abbc;
+    border-color: #db5a57;
+    color: #db5a57;
+    font-size: x-small;
+    margin-left: 1vw;
+}
+.footerSearchBtn:active{
+    height: 3vh;
+    width: 4vw;
+    border-radius: 6px;
+    background-color: #008293;
+    border-color: #ad2c29;
+    color: #ad2c29;
+    font-size: x-small;
+    margin-left: 1vw;
+}
+
+/* zipcode search button */
+.headerZipBtn{
+    height: 3vh;
+    width: 4vw;
+    border-radius: 6px;
+    background-color: #0294A5;
+    border-color: #c1403d;
+    color: #c1403d;
+    font-size: x-small;
+    margin-left: 1vw;
+}
+.headerZipBtn:hover{
+    height: 3vh;
+    width: 4vw;
+    border-radius: 6px;
+    background-color: #0294A5;
+    border-color: #c1403d;
+    color: #c1403d;
+    font-size: x-small;
+    margin-left: 1vw;
+}
+.headerZipBtn:active{
+    height: 3vh;
+    width: 4vw;
+    border-radius: 6px;
+    background-color: #008293;
+    border-color: #ad2c29;
+    color: #ad2c29;
+    font-size: x-small;
+    margin-left: 1vw;
 }
 
 /* login button(tennis ball) */

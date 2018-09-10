@@ -4,7 +4,7 @@
     grid-template-rows: 50% 45% 5%;
     justify-items: center;
     background-color: white;
-    height: 65%;
+    height: 100%;
     
 }
 
@@ -21,8 +21,8 @@
     grid-row-start: 2;
     grid-row-end: 2;
     position: relative;
-    right: 3vw;
-    top: 8vh;
+    right: 1.5vw;
+    top: 2vh;
 }
 
 .headerNavBar{
@@ -30,13 +30,34 @@
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 3;  
+    position: relative;
+    left: 7vw;
+    bottom: 6vh;
 }
 
 #headerDogPhoto{
-    height: 25vh;
+    height: 12vh;
 }
 
 #headerGif{
-    height: 10vh;
+    height: 7vh;
     
 }
+.headerZipBtn{
+    float: left;
+    position: relative;
+    bottom: 3.5vh;
+    left: 11vw;
+}
+
+.headerZipDiv{
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    position: relative;
+    bottom: 3vh;
+    left: 30vw;
+}
+
+

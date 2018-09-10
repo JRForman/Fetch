@@ -7,7 +7,7 @@
     opacity: .79;
     display: grid;
     grid-template-columns: 10% 26.66% 26.66% 26.66% 10%;
-    grid-template-rows: 20% 40% 30% 10%;
+    grid-template-rows: 10% 50% 35% 5%;
     justify-items: center;
 }
 
