@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./footer.css";
+import "./apiFooter.css";
 import { Link } from "react-router-dom";
 import Btn from "../btn";
 import FormInput from "../formInput";
@@ -9,15 +9,15 @@ class ApiFooter extends Component {
         return (
             <div className="apiFooter">
                 <span class="apiPrivacyStatement"><Link to='/#privacyStatement'>privacy statement</Link></span>
-                <span class="apiSitemap"><Link to='/#sitemap'>sitemap</Link></span>
+                <Link to='/' className="apiFooterLink">Fetch</Link>
                 <p className="apiCopyright"> copyright 2018</p>
-                <FormInput className="apiSearch">{this.FormInput.search}</FormInput>
-                <div className="apiSearchButton">
-                    <Btn onClick={this.handleFormSubmit}
-                        type="submit">Search</Btn>
+                <div className="apiFooterSearch">
+                        <FormInput className="apiSearchField" label="Search:" type="text" name="search"/> 
+                        <Btn className="apiFooterSearchBtn" label="Search" />
+                        </div>
                 </div>
 
-            </div>
+          
         )
     }
 }

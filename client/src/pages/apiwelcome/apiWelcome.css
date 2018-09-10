@@ -1,14 +1,38 @@
-.apiPage {
-    font-family: 'Poppins', sans-serif;
+.apiWelcomePage {
     display: grid;
     grid-template-columns: 39% 28% 39%;
-    grid-template-rows: 20vh 10vh 10vh;
- 
+    grid-template-rows: 20% 20% 10% 10% 40%;
+    justify-items: center;
+    background-image: url("./../../images/apibackground.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    color: #82170f;
+    font-family: 'norwester';
 }
-.apiLogo {
-    grid-column-start: 1;
-    grid-column-end: 2;
+
+.welcomeTitleDiv {
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 2;
-    grid-row-end: span 4;
-    margin-left: 10vw;
+    grid-row-end: 2;
+  
+}
+
+.apiWelcomeButton{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+.apiWelcomeBtn {
+    height: 4vh;
+    background-color: #82170f;
+    color: #fbf7f7;
+    border-color: #656464;
+    font-family: 'Open Sans', sans-serif;
+/* font-family: 'Montserrat', sans-serif;
+   */
 }

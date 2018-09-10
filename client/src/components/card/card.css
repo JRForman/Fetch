@@ -1,0 +1,114 @@
+.card{
+    display: grid;
+    grid-template-columns: 15% 14% 14% 14% 14% 14% 15%;
+    grid-template-rows: 5% 5% 5% 80% 5%;
+    justify-items: center;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.cardHeader{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-style: ridge;
+    border-width: thin;
+    border-color:  #03353e;
+}
+.cardFavoriteBtn{
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    position: relative;
+    bottom: 3.9vh;
+    left: 14vw;
+}
+.locTitle{
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.locAddress{
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.locWebsite{
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.cardCommentBtn{
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    position: relative;
+    bottom: 0.4vh;
+    left: 11.8vw;
+}
+.cardBody{
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 4;  
+    background-color: aqua;
+    height: 15vh;
+    border-right-style: ridge;
+    border-width: thin;
+    border-left-style: ridge;
+    border-color:  #03353e;
+}
+.cardRatingBtn1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+.cardRatingBtn2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+.cardRatingBtn3{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+.cardRatingBtn4{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+.cardRatingBtn5{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+.cardViewCommentBtn{
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 5;
+    grid-row-end: 5; 
+}
+.cardFooter{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-style: ridge;
+    border-width: thin;
+    border-color:  #03353e;
+
+}

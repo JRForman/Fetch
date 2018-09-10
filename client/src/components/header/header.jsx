@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./header.css";
-import CollNavBar from "../navBar";
+import CollNavBar from "../collNavBar";
 import BannerLogo from "../../images/bannerlogo.png";
 import BannerGif from "../../images/fetch.gif";
 

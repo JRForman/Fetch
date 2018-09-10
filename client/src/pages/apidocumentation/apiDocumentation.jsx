@@ -1,21 +1,13 @@
-import React from "react";
-import "./api.css";
+import React, { Component } from "react";
+import "./apiDocumentation.css";
 import { Link } from "react-router-dom";
-import ApiFooter from "../../components/footer";
-import ApiHeader from "../../components/header";
-import ApiNavBar from "../../components/navBar";
+import ApiBody from "../../components/apiBody";
 
 class ApiDocumentation extends Component {
     render() {
         return (
-            <div className="apiDocuemtationPage">
-                <ApiHeader />
-                <ApiNavBar />
-                <h1 ClassName="documentationTitle">Documentation</h1>
-                <div className="apiDocumentationDiv">
-                </div>
-                <ApiFooter />
-            </div>
+           <ApiBody label="documentation"></ApiBody>
+            
         )
     }
 }

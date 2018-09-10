@@ -1,0 +1,42 @@
+.apiNavBar{
+    background-color: #656464;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 30% 10% 40% 10%;
+    justify-items: center;
+    color: #fbf7f7;
+    font-family: 'Open Sans', sans-serif;
+    height: inherit;
+}
+
+.apiDashboardNav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1; 
+}
+
+.apiDocumentationNav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.apiSupportNav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.apiUpdateButton {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+.apiUpdateBtn{
+background-color: #656464;
+border-color: #656464;
+}
