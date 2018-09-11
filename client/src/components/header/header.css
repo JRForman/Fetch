@@ -31,7 +31,6 @@
     grid-row-start: 3;
     grid-row-end: 3;  
     position: relative;
-    left: 7vw;
     bottom: 6vh;
 }
 
@@ -48,6 +47,7 @@
     position: relative;
     bottom: 3.5vh;
     left: 11vw;
+    margin-left: 2vw;
 }
 
 .headerZipDiv{
