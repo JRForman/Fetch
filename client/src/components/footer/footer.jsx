@@ -12,7 +12,7 @@ class Footer extends Component {
                         <div className="footerLogo">
                                 <img src={ADJ} alt="ADJ Designs" id="companyLogo"/>
                                 </div>
-                                <div classname="footerCenter">
+                                <div className="footerCenter">
                                 <div className="footerLink">
                                 <Link to='/apiWelcome' >Fetch Developer Portal</Link>
                                 </div>

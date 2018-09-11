@@ -6,8 +6,11 @@
     display: flex;
     background-color: blueviolet;
     border-bottom: 1px solid #ccc;
-    height: 48px;
+    height: 30px;
+    width: 30px;
     margin: 0;
+    position: relative;
+    left: 4vw;
 }
 
 .topbar a {
@@ -28,21 +31,21 @@
 
 .menubar {
     width: 220px;
-    position: absolute;
-    background: #333333;
+   
+    background: white;
     top: 48px;
     z-index: 1;
-    left: -220px;
+    left: -1000vw;
     height: calc(100vh - 48px);
     transition: transform 300ms ease-out;
 }
 
-.menubar true {
+.menubar.true {
     -ms-transform: translate(280px);
     /* IE 9 */
     -webkit-transform: translate(280px);
     /* Safari */
-    transform: translate(280px);
+    transform: translateX(280px);
     /* Standard syntax */
 }
 
@@ -55,7 +58,7 @@ ul {
 }
 
 li {
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #03353e;
     text-decoration: none;
     color: #666;
     padding: 8px 16px;
@@ -82,10 +85,89 @@ li active {
     justify-content: center;
     height: calc(100vh - 49px);
 }
+.classOne{
+    background-color: #008293;
+}
 
-
+.classTwo{
+    background-color: #008293;
+}
+.toggled{
+    visibility: hidden;
+}
 /* @media(min-width: 769px) {
     h1 {
         font-size: 200px;
     }
 } */
+
+
+/* burger */
+.burger {
+	width: 28px;
+	
+	display: inline-block;
+  border: 0;
+	background: none;
+	outline: 0;
+	padding: 0;
+	cursor: pointer;
+    stroke-width: 4px;
+	border-bottom: solid currentColor;
+
+	transition: border-bottom 1s ease-in-out;
+	-webkit-transition: border-bottom 1s ease-in-out; 
+}
+	 /* Fix for extra space in Firefox */
+     .burger:-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}	 
+
+	.burger:before {
+		content: "";
+        display: block;
+        stroke-width: 4px;
+		border-bottom: solid currentColor;
+		width: 100%;
+		margin-bottom: 5px;
+		transition: transform 0.5s ease-in-out;    
+		-webkit-transition: -webkit-transform 0.5s ease-in-out;        
+	}
+
+	.burger:after {
+		content: "";
+        display: block;
+        stroke-width: 4px;
+		border-bottom: solid currentColor;
+		width: 100%;
+		margin-bottom: 5px;
+		transition: transform 0.5s ease-in-out;
+		-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	}
+
+
+.burger-check {
+  display: none;
+}
+
+.burger-check:checked ~ .burger {
+  border-bottom: solid transparent;
+  stroke-width: 4px;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out;
+}
+  .burger:before {
+    transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);      
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+
+  .burger:after {
+    transform: rotate(405deg) translateY(-4px) translateX(-5px); 
+    -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);       
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+
