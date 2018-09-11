@@ -13,7 +13,9 @@ class SignUp extends Component {
       this.state = {
          username: '',
          password: '',
-         email: ''
+         email: '',
+         zipCode: '',
+         petName: ''
       };
    }
    onChange = (e) => {
@@ -26,11 +28,13 @@ class SignUp extends Component {
    onSubmit = (e) => {
       e.preventDefault();
 
-      const { username, email, password } = this.state;
+      const { username, email, password, zipCode, petName } = this.state;
 
-      axios.post('/routes/api/signup', { username, email, password })
+      axios.post('/routes/api/signup', { username, email, password, zipCode, petName })
          .then((result) => {
             console.log("RESULT" + JSON.stringify(result))
+            localStorage.setItem("u_id", result.data.id)
+
             this.props.history.push("../login")
             // pushes a new entry onto the history stack
          });
@@ -39,7 +43,7 @@ class SignUp extends Component {
    }
 
    render() {
-      const { username, email, password } = this.state;
+      const { username, email, password, zipCode, petName } = this.state;
       return (
          <form className="signUpPage" onSubmit={this.onSubmit}>
             <div className="signUpLogo"><img src={Fetch} alt="fetch" id="signUpPhoto" /></div>
@@ -47,9 +51,11 @@ class SignUp extends Component {
                <FormInput className="signUpNameField" label="Name:" type="text" name="username" change={this.onChange} value={username} />
                <FormInput className="signUpEmailField" label="Email:" type="email" name="email" value={email} change={this.onChange} required />
                <FormInput className="signUpPasswordField" label="Password:" type="text" name="password" value={password} change={this.onChange} required />
+               <FormInput className="signUpZipcodeField" label="zipcode" type="number" name="zipCode" value={zipCode} change={this.onChange} required />
+               <FormInput className="signUpPetNameField" label="Pet Name:" type="text" name="petName" value={petName} change={this.onChange} required />
             </div>
             <div className="signUpButtons">
-            <Link to='/profile'><Btn className="signUpBtn" label="Sign Up" type="submit" /></Link>
+            <Btn className="signUpBtn" label="Sign Up" type="submit" />
                <Link to='/main'><Btn className="signUpCancelBtn" label="Cancel" /></Link>
                <p className="logInLink" type="submit">Or log in <Link to='/logIn'>here</Link></p>
             </div>

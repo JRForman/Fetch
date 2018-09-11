@@ -16,7 +16,19 @@ var UserSchema = new Schema({
   password: {
         type: String,
         required: true
-    }
+    },
+    zipCode: {
+        type: String,
+        unique: true,
+    },
+    petName: { 
+        type : Array, 
+        default : [] 
+    },
+    favoriteLocation: {
+        type : Array, 
+        default : [] 
+        }
           
 });
 
