@@ -8,7 +8,7 @@ class ApiFooter extends Component {
     render() {
         return (
             <div className="apiFooter">
-                <span class="apiPrivacyStatement"><Link to='/#privacyStatement'>privacy statement</Link></span>
+                <span class="apiPrivacyStatement"><Link to='/privacyStatement'>privacy statement</Link></span>
                 <Link to='/' className="apiFooterLink">Fetch</Link>
                 <p className="apiCopyright"> copyright 2018</p>
                 <div className="apiFooterSearch">

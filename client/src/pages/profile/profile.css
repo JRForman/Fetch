@@ -10,7 +10,7 @@
 }
 .profileNavBarDiv {
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 1;
     width: 100%;
@@ -24,6 +24,8 @@
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: span 6;
+    position: relative;
+    top: 3vh;
 }
 .personalMap{
     grid-column-start: 2;

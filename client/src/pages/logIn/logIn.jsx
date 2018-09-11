@@ -62,7 +62,7 @@ render() {
     </div>
     <div className="logInButtons">
     <Btn className="logInBtn" label={<img src={Ball} alt="update" id="updateButton"/>} />
-    <p className="signUpLink">Or sign up <Link to={'../signup'}>here</Link></p> 
+    <p className="signUpLink" type="submit">Or sign up <Link to='/signUp'>here</Link></p>
     </div>
     </div>
     </form>

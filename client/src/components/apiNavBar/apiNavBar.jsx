@@ -8,17 +8,21 @@ class ApiNavBar extends Component {
     render() {
         return (
             <div className="apiNavBar">
-                <h3 className="apiDashboardNav">Dashboard</h3>
-                <h3 className="apiDocumentationNav">Documentation</h3>
+           
+           
+                <h3 className="apiDashboardNav"><Link to='/apiDashboard'>Dashboard</Link></h3>
+                <h3 className="apiDocumentationNav"><Link to='/apiDashboard'>Documentation</Link></h3>
                 {/* div for docs hide and show with on click with validation css animation slide */}
+                <div className="docList">
                 <ul>
-                    <li>Get List of Sites</li>
-                    <li>Add Comments</li>
-                    <li>Delete Comments</li>
-                    <li>Add Paws</li>
-                    <li>Take Paws</li>
+                    <li><p>Get List of Sites</p></li>
+                    <li><p>Add Comments</p></li>
+                    <li><p>Delete Comments</p></li>
+                    <li><p>Add Paws</p></li>
+                    <li><p>Take Paws</p></li>
                 </ul>
-                <h3 className="apiSupportNav">Support</h3>
+                </div>
+                <h3 className="apiSupportNav"><Link to='/apiDashboard'>Support</Link></h3>
                 <div className="apiUpdateButton">
                 <Link to='/#apiForm'><Btn className="apiUpdateBtn" label={<img src={Gear} alt="update" id="apiUpdateButton"/>} /></Link>
                 </div>

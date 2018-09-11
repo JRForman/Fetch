@@ -1,3 +1,34 @@
+/* error button */
+.errorCancelBtn{
+    height: 7vh;
+    width: 5vw;
+    border-radius: 6px;
+    background-color: #0294A5;
+    border-color: #c1403d;
+    color: #c1403d;
+    font-size: large;
+}
+.errorCancelBtn:hover{
+    height: 7vh;
+    width: 5vw;
+    border-radius: 6px;
+    background-color: #19abbc;
+    border-color: #db5a57;
+    color: #db5a57;
+    font-size: large;
+    opacity: 1;
+}
+.errorCancelBtn:active{
+    height: 7vh;
+    width: 5vw;
+    border-radius: 6px;
+    background-color: #008293;
+    border-color: #ad2c29;
+    color: #ad2c29;
+    font-size: large;
+    opacity: 1;
+}
+
 /* welcome button */
 .welcomeBtn{
     height: 7vh;
@@ -127,7 +158,7 @@
     border-radius: 50%;
 }
 .navLogOutBtn{
-    height: 3vh;
+    height: 4vh;
     width: 4vw;
     font-size: small;
     border-radius: 6px;
@@ -136,7 +167,7 @@
     color: #c1403d;
 }
 .navLogOutBtn:hover{
-    height: 3vh;
+    height: 4vh;
     width: 4vw;
     font-size: small;
     border-radius: 6px;
@@ -145,7 +176,7 @@
     color: #db5a57;
 }
 .navLogOutBtn:active{
-    height: 3vh;
+    height: 4vh;
     width: 4vw;
     font-size: small;
     border-radius: 6px;
@@ -154,7 +185,7 @@
     color: #ad2c29;
 }
 .navSearchBtn{
-    height: 3vh;
+    height: 4vh;
     width: 4vw;
     font-size: small;
     border-radius: 6px;
@@ -163,7 +194,7 @@
     color: #c1403d;
 }
 .navSearchBtn:hover{
-    height: 3vh;
+    height: 4vh;
     width: 4vw;
     font-size: small;
     border-radius: 6px;
@@ -172,7 +203,7 @@
     color: #db5a57;
 }
 .navSearchBtn:active{
-    height: 3vh;
+    height: 4vh;
     width: 4vw;
     font-size: small;
     border-radius: 6px;
@@ -180,6 +211,7 @@
     border-color: #ad2c29;
     color: #ad2c29;
 }
+
 /* footer  button */
 .footerSearchBtn{
     height: 3vh;
@@ -246,9 +278,73 @@
 
 /* login button(tennis ball) */
 .logInBtn{
-    background-color: white;
+    background-color: blue;
     border: none;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
+    background-color: #f9f7f7;
+    border: none;
+
+}
+
+/* sign up buttons */
+.signUpBtn{
+    width: 5vw;
+    font-size: small;
+    height: 4vh;
+    border-radius: 6px;
+    background-color: #0294A5;
+    border-color: #c1403d;
+    color: #c1403d;
+}
+.signUpBtn:hover{
+    width: 5vw;
+    font-size: small;
+    height: 4vh;
+    border-radius: 6px;
+    background-color: #19abbc;
+    border-color: #db5a57;
+    color: #db5a57;
+}
+.signUpBtn:active{
+    width: 5vw;
+    font-size: small;
+    height: 4vh;
+    border-radius: 6px;
+    background-color: #008293;
+    border-color: #ad2c29;
+    color: #ad2c29;
+}
+.signUpCancelBtn{
+    font-size: small;
+    width: 5vw;
+    height: 4vh;
+    border-radius: 6px;
+    margin-left: .5vw;
+    background-color: #0294A5;
+    border-color: #c1403d;
+    color: #c1403d;
+}
+.signUpCancelBtn:hover{
+    font-size: small;
+    width: 5vw;
+    height: 4vh;
+    border-radius: 6px;
+    margin-left: .5vw;
+    background-color: #19abbc;
+    border-color: #db5a57;
+    color: #db5a57;
+}
+.signUpCancelBtn:active{
+    font-size: small;
+    width: 5vw;
+    height: 4vh;
+    border-radius: 6px;
+    margin-left: .5vw;
+    background-color: #008293;
+    border-color: #ad2c29;
+    color: #ad2c29;
 }
 
 /* card buttons */
@@ -485,10 +581,45 @@
 }
 
 /* api buttons */
+
 /* welcome page */
 .apiWelcomeBtn {
     height: 7vh;
     width: 4vw;
+    border-radius: 6px;
+    background-color: #82170f;
+    color: #fbf7f7;
+    border-color: #656464;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+
+/* form page */
+.apiSubmitBtn{
+    height: 7vh;
+    width: 5vw;
+    border-radius: 6px;
+    background-color: #82170f;
+    color: #fbf7f7;
+    border-color: #656464;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+
+/* contact page */
+.apiContactBtn{
+    height: 7vh;
+    width: 5vw;
+    border-radius: 6px;
+    background-color: #82170f;
+    color: #fbf7f7;
+    border-color: #656464;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+.apiFooterSearchBtn{
+    height: 3vh;
+    width: 3vw;
     border-radius: 6px;
     background-color: #82170f;
     color: #fbf7f7;
