@@ -30,6 +30,95 @@
     opacity: 1;
 }
 
+/* CollNavBar buttons */
+.collNavSignUpBtn{
+    height: 7vh;
+    width: 5vw;
+    font-size: small;
+    border-radius: 6px;
+    background-color: #0294A5;
+    border-color: #c1403d;
+    color: #c1403d;
+}
+.collNavSignUpBtn:hover{
+    height: 7vh;
+    width: 5vw;
+    font-size: small;
+    border-radius: 6px;
+    background-color: #19abbc;
+    border-color: #db5a57;
+    color: #db5a57;
+}
+.collNavSignUpBtn:active{
+    height: 7vh;
+    width: 5vw;
+    font-size: small;
+    border-radius: 6px;
+    background-color: #008293;
+    border-color: #ad2c29;
+    color: #ad2c29;
+}
+.collNavLogOutBtn{
+    height: 7vh;
+    width: 5vw;
+    font-size: small;
+    border-radius: 6px;
+    background-color: #0294A5;
+    border-color: #c1403d;
+    color: #c1403d;
+}
+.collNavLogOutBtn:hover{
+    height: 7vh;
+    width: 5vw;
+    font-size: small;
+    border-radius: 6px;
+    background-color: #19abbc;
+    border-color: #db5a57;
+    color: #db5a57;
+}
+.collNavLogOutBtn:active{
+    height: 7vh;
+    width: 5vw;
+    font-size: small;
+    border-radius: 6px;
+    background-color: #008293;
+    border-color: #ad2c29;
+    color: #ad2c29;
+}
+.collNavHomeBtn{
+    height: 7vh;
+    width: 5vw;
+    font-size: small;
+    border-radius: 6px;
+    background-color: #0294A5;
+    border-color: #c1403d;
+    color: #c1403d;
+}
+.collNavHomeBtn:hover{
+    height: 7vh;
+    width: 5vw;
+    font-size: small;
+    border-radius: 6px;
+    background-color: #19abbc;
+    border-color: #db5a57;
+    color: #db5a57;
+}
+.collNavHomeBtn:active{
+    height: 7vh;
+    width: 5vw;
+    font-size: small;
+    border-radius: 6px;
+    background-color: #008293;
+    border-color: #ad2c29;
+    color: #ad2c29;
+}
+.collNavUpdateBtn{
+    background-color: white;
+    border-color: white;
+    height: 5vh;
+    border-radius: 50%;
+}
+
 /* navbar buttons */
 .navUpdateBtn{
     background-color: white;
@@ -395,3 +484,14 @@
     opacity: 1;
 }
 
+/* api buttons */
+/* welcome page */
+.apiWelcomeBtn {
+    height: 7vh;
+    width: 4vw;
+    border-radius: 6px;
+    background-color: #82170f;
+    color: #fbf7f7;
+    border-color: #656464;
+    font-family: 'Open Sans', sans-serif;
+}

@@ -11,6 +11,13 @@ class ApiNavBar extends Component {
                 <h3 className="apiDashboardNav">Dashboard</h3>
                 <h3 className="apiDocumentationNav">Documentation</h3>
                 {/* div for docs hide and show with on click with validation css animation slide */}
+                <ul>
+                    <li>Get List of Sites</li>
+                    <li>Add Comments</li>
+                    <li>Delete Comments</li>
+                    <li>Add Paws</li>
+                    <li>Take Paws</li>
+                </ul>
                 <h3 className="apiSupportNav">Support</h3>
                 <div className="apiUpdateButton">
                 <Link to='/#apiForm'><Btn className="apiUpdateBtn" label={<img src={Gear} alt="update" id="apiUpdateButton"/>} /></Link>
