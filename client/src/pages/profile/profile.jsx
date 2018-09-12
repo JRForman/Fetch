@@ -57,7 +57,7 @@ class Profile extends Component {
           const {username, email, password,zipCode, petName, favoriteLocation } = this.state;
           return (
               <div className="profilePage">
-              <div className="navBarDiv">
+              <div className="profileNavBarDiv">
               <NavBar />
               </div>
               <div className="personalInfo">

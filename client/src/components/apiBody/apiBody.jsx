@@ -22,7 +22,7 @@ const ApiBody = (props) => (
                     {props.children}
                 </div>
                 <div className="apiFooterDiv">
-                {/* <ApiFooter /> */}
+                <ApiFooter />
                 </div>
             </div>
         );

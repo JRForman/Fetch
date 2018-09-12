@@ -31,20 +31,6 @@
     flex-direction: row;
   
 }
-
-.signUpBtn{
-    width: 5vw;
-    font-size: small;
-    height: 4vh;
-}
-
-.signUpCancelBtn{
-    font-size: small;
-    width: 5vw;
-    height: 4vh;
-    margin-left: .5vw;
-}
-
 .logInLink{
     height: 2vh;
     margin-left: .5vw;

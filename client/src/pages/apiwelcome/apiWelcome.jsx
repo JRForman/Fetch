@@ -12,7 +12,7 @@ class ApiWelcome extends Component {
 <h1>Fetch Developer Portal</h1>
 </div>
 <div className="apiWelcomeButton">
-<Link to='/#apiDocumentation'><Btn className="apiWelcomeBtn" label="Enter" /></Link>
+<Link to='/apiDocumentation'><Btn className="apiWelcomeBtn" label="Enter" /></Link>
 </div>
 </div>
 

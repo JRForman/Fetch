@@ -12,7 +12,7 @@ class ApiHeader extends Component {
                 <img src={CompanyApiLogo} alt="ADJ Designs" className="apiCompanyLogo" />
                 <img src={FetchApiLogo} alt="fetch" className="apiBrandLogo" />
                 <div className="apiFormButton">
-                    <p className="keyRequest">Get a <Link to={'/#apiForm'}><img src={Key} alt="fetch Key" id="Key" /></Link></p>
+                <p className="keyRequest" type="submit">Get a <Link to='/apiForm'><img src={Key} alt="fetch Key" id="Key" /></Link></p>
                 </div>
             </div>
         )
