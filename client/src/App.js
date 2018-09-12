@@ -14,6 +14,7 @@ import Profile from "./pages/profile";
 import SignUp from "./pages/signUp";
 import Update from "./pages/update";
 import Welcome from "./pages/welcome";
+// import Application from "./pages/Application";
 
 // api pages
 import ApiWelcome from "./pages/apiWelcome";
@@ -37,6 +38,7 @@ const App = () => (
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/update" component={Update} />
         <Route exact path="/apiWelcome" component={ApiWelcome} />  
+
         <Route exact path="/apiDocumentation" component={ApiDocumentation} />  
         <Route exact path="/apiForm" component={ApiForm} />      
         <Route exact path="/apiDashboard" component={ApiDashboard} /> 
